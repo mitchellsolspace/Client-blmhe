@@ -1,0 +1,17 @@
+{% import "_macros" as macro %}
+<a data-fancybox="{{fancyboxGalleryName}}" href="{{fancyboxFullsizeImage}}" data-caption="{{fancyboxCaption}}" class="aldrich-fancybox {{fancyboxClasses}}">
+  <figure class="image-container {{imageContainerClasses}}">
+  {{ macro.lazyImage (
+    lazyImageClass,
+    lazyImageImgLowQuality,
+    lazyImageFallbackImg,
+    lazyImageImages,
+    lazyImageAltText,
+    lazyImageShowLowQualityImageWhileLoading,
+    lazyImageShowAutoSize,
+    lazyImageWrap,
+    height,
+    width
+  )}}
+  </figure>
+</a>

@@ -1,0 +1,153 @@
+@import "swiper/swiper"; // References node_modules
+
+.swiper {
+  &__eyebrow {
+    @include pgs-shared-type-canyon;
+  }
+  &__title {
+    @include media-breakpoint-down(sm) {
+      @include pgs-shared-type-cattle;
+    }
+    @include media-breakpoint-up(md) {
+      @include pgs-shared-type-fence;
+    }
+  }
+  &-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: justify;
+  }
+  &-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      text-indent: -99999px;
+    }
+    a {
+      width: 100%;
+    }
+  }
+  &-button {
+    &-prev {
+      &:hover {
+        cursor: pointer;
+      }
+      position: absolute;
+      background: white;
+      z-index: 2;
+      opacity: 1;
+      transition: opacity 0.25s;
+    }
+    &-next {
+      &:hover {
+        cursor: pointer;
+      }
+      position: absolute;
+      background: white;
+      right: 0;
+      z-index: 2;
+      opacity: 1;
+      transition: opacity 0.25s;
+    }
+    &-disabled {
+      opacity: 0;
+    }
+  }
+  &-caption {
+    background: theme-color("off-white");
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    max-width: calc(100% - 10px);
+    padding-left: 10px !important;
+    // @include rfs($pgs-global-spacer-cap, padding-left);
+    // @include rfs($pgs-global-spacer-yard, padding-top);
+    @include media-breakpoint-only(xs) {
+      opacity: 0;
+    }
+  }
+  &--feature {
+    .swiper-container {
+      margin: map-get($spacers, 5) 0;
+    }
+    @include media-breakpoint-down(sm) {
+      ol {
+        margin: map-get($spacers, 5) 0;
+      }
+    }
+
+    .swiper__image {
+      @include image-margin-bottom;
+    }
+
+    .swiper-slide {
+      flex-wrap: wrap;
+      justify-content: left;
+    }
+  }
+}
+
+// These blur image before they load...
+.swiper-lazy,
+.swiper-lazy-loading {
+  @include blur;
+}
+
+// ...and then clear it
+.swiper-lazy-loaded {
+  @include blur-resolve;
+}
+
+// From https://tobiasahlin.com/spinkit/
+.swiper-lazy-preloader {
+  height: 40px;
+  position: absolute;
+  .spinner {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .spinner > div {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+
+  .spinner .rect2 {
+    animation-delay: -1.1s;
+  }
+
+  .spinner .rect3 {
+    animation-delay: -1s;
+  }
+
+  .spinner .rect4 {
+    animation-delay: -0.9s;
+  }
+
+  .spinner .rect5 {
+    animation-delay: -0.8s;
+  }
+
+  @keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }
+    20% {
+      transform: scaleY(1);
+      -webkit-transform: scaleY(1);
+    }
+  }
+}

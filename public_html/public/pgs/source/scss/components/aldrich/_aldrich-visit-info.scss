@@ -1,0 +1,46 @@
+.aldrich-visit {
+  @include sans-serif-bold;
+  @include font-size($pgs-font-size-3);
+  em {
+    @include sans-serif-bold-oblique;
+  }
+  line-height: 1.2;
+  width: 100%;
+  &__eyebrow {
+    margin-bottom: $pgs-font-subsize-3;
+  }
+  &__listing {
+    td {
+      vertical-align: top;
+      padding-bottom: 8px;
+    }
+    &:last-child {
+      td {
+        padding-bottom: 0;
+      }
+    }
+  }
+  &__dots,
+  &__time {
+    vertical-align: bottom;
+  }
+  &__dots {
+    width: 50%;
+    background: url("../img/svg/dot.svg") repeat-x 100% -11px;
+    background-size: 17px;
+    @include media-breakpoint-down(sm) {
+      background-position: 5px 0.66em;
+    }
+    @include media-breakpoint-up(md) {
+      background-position: 5px 0.66em;
+    }
+  }
+  &__day {
+    background: theme-color("bright-lime");
+    padding-right: 7px;
+  }
+  &__time {
+    width: 50%;
+    padding-left: 5px;
+  }
+}

@@ -1,0 +1,542 @@
+2026-07-07 19:55:23 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "users/set-password". in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('users/set-passw...', Array)
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/console/Application.php(88): yii\console\Application->runAction('users/set-passw...', Array)
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('users/set-passw...', Array)
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /Users/mk/Herd/Client-blmhe-2/public_html/craft(23): yii\base\Application->run()
+#5 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "users/set-password". in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/console/Application.php(88): yii\console\Application->runAction('users/set-passw...', Array)
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('users/set-passw...', Array)
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/craft(23): yii\base\Application->run()
+#4 {main}
+2026-07-07 19:55:23 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TMPDIR' => '/var/folders/4f/9dsmzbb52ml35xtltz6m4c8w0000gn/T/'
+    '__CFBundleIdentifier' => 'com.apple.Terminal'
+    'XPC_FLAGS' => '0x0'
+    'TERM' => 'xterm-256color'
+    'SSH_AUTH_SOCK' => '/var/run/com.apple.launchd.gHBuo0gNUH/Listeners'
+    'XPC_SERVICE_NAME' => '0'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'COLORTERM' => 'truecolor'
+    'OSLogRateLimit' => '64'
+    'TERM_PROGRAM_VERSION' => '470.2'
+    'TERM_SESSION_ID' => 'E0875AB1-39DF-42D9-A740-D90ABC503DDD'
+    'SHELL' => '/bin/zsh'
+    'HOME' => '/Users/mk'
+    'LOGNAME' => 'mk'
+    'USER' => 'mk'
+    'PATH' => '/opt/homebrew/opt/postgresql@15/bin:/Users/mk/Library/Application Support/Herd/bin/:/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Users/mk/.orbstack/bin'
+    'SHLVL' => '1'
+    'PWD' => '/Users/mk/Herd/Client-blmhe/public_html'
+    'OLDPWD' => '/Users/mk/Herd/Client-blmhe'
+    'HOMEBREW_PREFIX' => '/opt/homebrew'
+    'HOMEBREW_CELLAR' => '/opt/homebrew/Cellar'
+    'HOMEBREW_REPOSITORY' => '/opt/homebrew'
+    'FPATH' => '/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh'
+    'INFOPATH' => '/opt/homebrew/share/info:'
+    'NVM_DIR' => '/Users/mk/Library/Application Support/Herd/config/nvm'
+    'NVM_CD_FLAGS' => '-q'
+    'NVM_BIN' => '/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/bin'
+    'NVM_INC' => '/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/include/node'
+    'HERD_PHP_83_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/83/'
+    'HERD_PHP_74_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/74/'
+    'HERD_PHP_82_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/82/'
+    'HERD_PHP_84_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/84/'
+    'LANG' => 'en_US.UTF-8'
+    '_' => '/Users/mk/Library/Application Support/Herd/bin//php74'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1783468523.8101
+    'REQUEST_TIME' => 1783468523
+    'argv' => [
+        0 => 'craft'
+        1 => 'users/set-password'
+        2 => 'blm'
+        3 => 'jakeys'
+    ]
+    'argc' => 4
+    'ENVIRONMENT' => 'production'
+    'APP_ID' => 'CraftCMS--40fadfbd-5acb-4346-8cc6-f36bc6a8bc5e'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'DB_DRIVER' => 'mysql'
+    'DB_SERVER' => '127.0.0.1'
+    'DB_PORT' => ''
+    'DB_DATABASE' => 'client-blmhe-org'
+    'DB_USER' => 'root'
+    'DB_PASSWORD' => ''
+    'DB_SCHEMA' => 'public'
+    'DB_TABLE_PREFIX' => ''
+    'SYSTEM_NAME' => 'Black Lives Matter in Higher Education'
+    'PRIMARY_SITE_URL' => 'http://blmhe.org'
+]
+2026-07-07 19:55:36 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "users/set-password". in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('users/set-passw...', Array)
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/console/Application.php(88): yii\console\Application->runAction('users/set-passw...', Array)
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('users/set-passw...', Array)
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /Users/mk/Herd/Client-blmhe-2/public_html/craft(23): yii\base\Application->run()
+#5 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "users/set-password". in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/console/Application.php(88): yii\console\Application->runAction('users/set-passw...', Array)
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('users/set-passw...', Array)
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/craft(23): yii\base\Application->run()
+#4 {main}
+2026-07-07 19:55:36 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TMPDIR' => '/var/folders/4f/9dsmzbb52ml35xtltz6m4c8w0000gn/T/'
+    '__CFBundleIdentifier' => 'com.apple.Terminal'
+    'XPC_FLAGS' => '0x0'
+    'TERM' => 'xterm-256color'
+    'SSH_AUTH_SOCK' => '/var/run/com.apple.launchd.gHBuo0gNUH/Listeners'
+    'XPC_SERVICE_NAME' => '0'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'COLORTERM' => 'truecolor'
+    'OSLogRateLimit' => '64'
+    'TERM_PROGRAM_VERSION' => '470.2'
+    'TERM_SESSION_ID' => 'E0875AB1-39DF-42D9-A740-D90ABC503DDD'
+    'SHELL' => '/bin/zsh'
+    'HOME' => '/Users/mk'
+    'LOGNAME' => 'mk'
+    'USER' => 'mk'
+    'PATH' => '/opt/homebrew/opt/postgresql@15/bin:/Users/mk/Library/Application Support/Herd/bin/:/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Users/mk/.orbstack/bin'
+    'SHLVL' => '1'
+    'PWD' => '/Users/mk/Herd/Client-blmhe/public_html'
+    'OLDPWD' => '/Users/mk/Herd/Client-blmhe'
+    'HOMEBREW_PREFIX' => '/opt/homebrew'
+    'HOMEBREW_CELLAR' => '/opt/homebrew/Cellar'
+    'HOMEBREW_REPOSITORY' => '/opt/homebrew'
+    'FPATH' => '/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh'
+    'INFOPATH' => '/opt/homebrew/share/info:'
+    'NVM_DIR' => '/Users/mk/Library/Application Support/Herd/config/nvm'
+    'NVM_CD_FLAGS' => '-q'
+    'NVM_BIN' => '/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/bin'
+    'NVM_INC' => '/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/include/node'
+    'HERD_PHP_83_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/83/'
+    'HERD_PHP_74_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/74/'
+    'HERD_PHP_82_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/82/'
+    'HERD_PHP_84_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/84/'
+    'LANG' => 'en_US.UTF-8'
+    '_' => '/Users/mk/Library/Application Support/Herd/bin//php74'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1783468536.8168
+    'REQUEST_TIME' => 1783468536
+    'argv' => [
+        0 => 'craft'
+        1 => 'users/set-password'
+        2 => 'blm'
+        3 => 'jakeys'
+    ]
+    'argc' => 4
+    'ENVIRONMENT' => 'production'
+    'APP_ID' => 'CraftCMS--40fadfbd-5acb-4346-8cc6-f36bc6a8bc5e'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'DB_DRIVER' => 'mysql'
+    'DB_SERVER' => '127.0.0.1'
+    'DB_PORT' => ''
+    'DB_DATABASE' => 'client-blmhe-org'
+    'DB_USER' => 'root'
+    'DB_PASSWORD' => ''
+    'DB_SCHEMA' => 'public'
+    'DB_TABLE_PREFIX' => ''
+    'SYSTEM_NAME' => 'Black Lives Matter in Higher Education'
+    'PRIMARY_SITE_URL' => 'http://blmhe.org'
+]
+2026-07-07 19:58:00 [-][-][-][error][yii\console\Exception] yii\console\Exception: No help for unknown command "users". in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/controllers/HelpController.php:55
+Stack trace:
+#0 [internal function]: yii\console\controllers\HelpController->actionIndex('users')
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams(Array)
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Controller.php(179): yii\base\Controller->runAction('', Array)
+#4 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#5 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('help', Array)
+#6 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/console/Application.php(88): yii\console\Application->runAction('help', Array)
+#7 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('help', Array)
+#8 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(craft\console\Request))
+#9 /Users/mk/Herd/Client-blmhe-2/public_html/craft(23): yii\base\Application->run()
+#10 {main}
+2026-07-07 19:58:00 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TMPDIR' => '/var/folders/4f/9dsmzbb52ml35xtltz6m4c8w0000gn/T/'
+    '__CFBundleIdentifier' => 'com.apple.Terminal'
+    'XPC_FLAGS' => '0x0'
+    'TERM' => 'xterm-256color'
+    'SSH_AUTH_SOCK' => '/var/run/com.apple.launchd.gHBuo0gNUH/Listeners'
+    'XPC_SERVICE_NAME' => '0'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'COLORTERM' => 'truecolor'
+    'OSLogRateLimit' => '64'
+    'TERM_PROGRAM_VERSION' => '470.2'
+    'TERM_SESSION_ID' => 'E0875AB1-39DF-42D9-A740-D90ABC503DDD'
+    'SHELL' => '/bin/zsh'
+    'HOME' => '/Users/mk'
+    'LOGNAME' => 'mk'
+    'USER' => 'mk'
+    'PATH' => '/opt/homebrew/opt/postgresql@15/bin:/Users/mk/Library/Application Support/Herd/bin/:/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Users/mk/.orbstack/bin:/Users/mk/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown/bin'
+    'SHLVL' => '2'
+    'PWD' => '/Users/mk/Herd/Client-blmhe-2/public_html'
+    'OLDPWD' => '/Users/mk/Herd/Client-blmhe-2/public_html'
+    'HOMEBREW_PREFIX' => '/opt/homebrew'
+    'HOMEBREW_CELLAR' => '/opt/homebrew/Cellar'
+    'HOMEBREW_REPOSITORY' => '/opt/homebrew'
+    'FPATH' => '/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh'
+    'INFOPATH' => '/opt/homebrew/share/info:'
+    'NVM_DIR' => '/Users/mk/Library/Application Support/Herd/config/nvm'
+    'NVM_CD_FLAGS' => '-q'
+    'NVM_BIN' => '/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/bin'
+    'NVM_INC' => '/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/include/node'
+    'HERD_PHP_83_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/83/'
+    'HERD_PHP_74_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/74/'
+    'HERD_PHP_82_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/82/'
+    'HERD_PHP_84_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/84/'
+    'LANG' => 'en_US.UTF-8'
+    'NoDefaultCurrentDirectoryInExePath' => '1'
+    'COREPACK_ENABLE_AUTO_PIN' => '0'
+    'AI_AGENT' => 'claude-code_2-1-193_agent'
+    'CLAUDE_CODE_ENTRYPOINT' => 'cli'
+    'GIT_EDITOR' => 'true'
+    'CLAUDE_CODE_EXECPATH' => '/opt/homebrew/Caskroom/claude-code/2.1.193/claude'
+    'CLAUDECODE' => '1'
+    'CLAUDE_CODE_SESSION_ID' => '7aa14e29-5523-41c5-85bf-cb06a3d6a4d5'
+    'CLAUDE_CODE_CHILD_SESSION' => '1'
+    'CLAUDE_EFFORT' => 'high'
+    '_' => '/Users/mk/Library/Application Support/Herd/bin/php74'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1783468680.046
+    'REQUEST_TIME' => 1783468680
+    'argv' => [
+        0 => 'craft'
+        1 => 'help'
+        2 => 'users'
+    ]
+    'argc' => 3
+    'ENVIRONMENT' => 'production'
+    'APP_ID' => 'CraftCMS--40fadfbd-5acb-4346-8cc6-f36bc6a8bc5e'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'DB_DRIVER' => 'mysql'
+    'DB_SERVER' => '127.0.0.1'
+    'DB_PORT' => ''
+    'DB_DATABASE' => 'client-blmhe-org'
+    'DB_USER' => 'root'
+    'DB_PASSWORD' => ''
+    'DB_SCHEMA' => 'public'
+    'DB_TABLE_PREFIX' => ''
+    'SYSTEM_NAME' => 'Black Lives Matter in Higher Education'
+    'PRIMARY_SITE_URL' => 'http://blmhe.org'
+]
+2026-07-07 19:58:06 [-][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: fwrite(): write of 23 bytes failed with errno=32 Broken pipe in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/helpers/BaseConsole.php:731
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'fwrite(): write...', '/Users/mk/Herd/...', 731, Array)
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/helpers/BaseConsole.php(731): fwrite(Resource id #2, 'Takes the syste...')
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Controller.php(293): yii\helpers\BaseConsole::stdout('Takes the syste...')
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/controllers/HelpController.php(321): yii\console\Controller->stdout('Takes the syste...', 1)
+#4 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/controllers/HelpController.php(67): yii\console\controllers\HelpController->getDefaultHelp()
+#5 [internal function]: yii\console\controllers\HelpController->actionIndex(NULL)
+#6 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Controller.php(180): yii\base\InlineAction->runWithParams(Array)
+#8 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Controller.php(179): yii\base\Controller->runAction('', Array)
+#9 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#10 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('help', Array)
+#11 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/console/Application.php(88): yii\console\Application->runAction('help', Array)
+#12 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('help', Array)
+#13 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(craft\console\Request))
+#14 /Users/mk/Herd/Client-blmhe-2/public_html/craft(23): yii\base\Application->run()
+#15 {main}
+2026-07-07 19:58:06 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TMPDIR' => '/var/folders/4f/9dsmzbb52ml35xtltz6m4c8w0000gn/T/'
+    '__CFBundleIdentifier' => 'com.apple.Terminal'
+    'XPC_FLAGS' => '0x0'
+    'TERM' => 'xterm-256color'
+    'SSH_AUTH_SOCK' => '/var/run/com.apple.launchd.gHBuo0gNUH/Listeners'
+    'XPC_SERVICE_NAME' => '0'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'COLORTERM' => 'truecolor'
+    'OSLogRateLimit' => '64'
+    'TERM_PROGRAM_VERSION' => '470.2'
+    'TERM_SESSION_ID' => 'E0875AB1-39DF-42D9-A740-D90ABC503DDD'
+    'SHELL' => '/bin/zsh'
+    'HOME' => '/Users/mk'
+    'LOGNAME' => 'mk'
+    'USER' => 'mk'
+    'PATH' => '/opt/homebrew/opt/postgresql@15/bin:/Users/mk/Library/Application Support/Herd/bin/:/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Users/mk/.orbstack/bin:/Users/mk/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown/bin'
+    'SHLVL' => '2'
+    'PWD' => '/Users/mk/Herd/Client-blmhe-2/public_html'
+    'OLDPWD' => '/Users/mk/Herd/Client-blmhe-2/public_html'
+    'HOMEBREW_PREFIX' => '/opt/homebrew'
+    'HOMEBREW_CELLAR' => '/opt/homebrew/Cellar'
+    'HOMEBREW_REPOSITORY' => '/opt/homebrew'
+    'FPATH' => '/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh'
+    'INFOPATH' => '/opt/homebrew/share/info:'
+    'NVM_DIR' => '/Users/mk/Library/Application Support/Herd/config/nvm'
+    'NVM_CD_FLAGS' => '-q'
+    'NVM_BIN' => '/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/bin'
+    'NVM_INC' => '/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/include/node'
+    'HERD_PHP_83_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/83/'
+    'HERD_PHP_74_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/74/'
+    'HERD_PHP_82_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/82/'
+    'HERD_PHP_84_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/84/'
+    'LANG' => 'en_US.UTF-8'
+    'NoDefaultCurrentDirectoryInExePath' => '1'
+    'COREPACK_ENABLE_AUTO_PIN' => '0'
+    'AI_AGENT' => 'claude-code_2-1-193_agent'
+    'CLAUDE_CODE_ENTRYPOINT' => 'cli'
+    'GIT_EDITOR' => 'true'
+    'CLAUDE_CODE_EXECPATH' => '/opt/homebrew/Caskroom/claude-code/2.1.193/claude'
+    'CLAUDECODE' => '1'
+    'CLAUDE_CODE_SESSION_ID' => '7aa14e29-5523-41c5-85bf-cb06a3d6a4d5'
+    'CLAUDE_CODE_CHILD_SESSION' => '1'
+    'CLAUDE_EFFORT' => 'high'
+    '_' => '/Users/mk/Library/Application Support/Herd/bin/php74'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1783468686.0064
+    'REQUEST_TIME' => 1783468686
+    'argv' => [
+        0 => 'craft'
+        1 => 'help'
+    ]
+    'argc' => 2
+    'ENVIRONMENT' => 'production'
+    'APP_ID' => 'CraftCMS--40fadfbd-5acb-4346-8cc6-f36bc6a8bc5e'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'DB_DRIVER' => 'mysql'
+    'DB_SERVER' => '127.0.0.1'
+    'DB_PORT' => ''
+    'DB_DATABASE' => 'client-blmhe-org'
+    'DB_USER' => 'root'
+    'DB_PASSWORD' => ''
+    'DB_SCHEMA' => 'public'
+    'DB_TABLE_PREFIX' => ''
+    'SYSTEM_NAME' => 'Black Lives Matter in Higher Education'
+    'PRIMARY_SITE_URL' => 'http://blmhe.org'
+]
+2026-07-07 20:22:48 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "--version". in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('--version', Array)
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/console/Application.php(89): yii\console\Application->runAction('--version', Array)
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('--version', Array)
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/console/Application.php(118): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#5 /Users/mk/Herd/Client-blmhe-2/public_html/craft(23): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "--version". in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/console/Application.php(89): yii\console\Application->runAction('--version', Array)
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('--version', Array)
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/console/Application.php(118): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /Users/mk/Herd/Client-blmhe-2/public_html/craft(23): yii\base\Application->run()
+#5 {main}
+2026-07-07 20:22:47 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TMPDIR' => '/var/folders/4f/9dsmzbb52ml35xtltz6m4c8w0000gn/T/'
+    '__CFBundleIdentifier' => 'com.apple.Terminal'
+    'XPC_FLAGS' => '0x0'
+    'TERM' => 'xterm-256color'
+    'SSH_AUTH_SOCK' => '/var/run/com.apple.launchd.gHBuo0gNUH/Listeners'
+    'XPC_SERVICE_NAME' => '0'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'COLORTERM' => 'truecolor'
+    'OSLogRateLimit' => '64'
+    'TERM_PROGRAM_VERSION' => '470.2'
+    'TERM_SESSION_ID' => 'E0875AB1-39DF-42D9-A740-D90ABC503DDD'
+    'SHELL' => '/bin/zsh'
+    'HOME' => '/Users/mk'
+    'LOGNAME' => 'mk'
+    'USER' => 'mk'
+    'PATH' => '/opt/homebrew/opt/postgresql@15/bin:/Users/mk/Library/Application Support/Herd/bin/:/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Users/mk/.orbstack/bin:/Users/mk/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown/bin'
+    'SHLVL' => '2'
+    'PWD' => '•••••••••••••••••••••••••••••••••••••••••'
+    'OLDPWD' => '/Users/mk/Herd/Client-blmhe-2/public_html'
+    'HOMEBREW_PREFIX' => '/opt/homebrew'
+    'HOMEBREW_CELLAR' => '/opt/homebrew/Cellar'
+    'HOMEBREW_REPOSITORY' => '/opt/homebrew'
+    'FPATH' => '/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh'
+    'INFOPATH' => '/opt/homebrew/share/info:'
+    'NVM_DIR' => '/Users/mk/Library/Application Support/Herd/config/nvm'
+    'NVM_CD_FLAGS' => '-q'
+    'NVM_BIN' => '/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/bin'
+    'NVM_INC' => '/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/include/node'
+    'HERD_PHP_83_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/83/'
+    'HERD_PHP_74_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/74/'
+    'HERD_PHP_82_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/82/'
+    'HERD_PHP_84_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/84/'
+    'LANG' => 'en_US.UTF-8'
+    'NoDefaultCurrentDirectoryInExePath' => '1'
+    'COREPACK_ENABLE_AUTO_PIN' => '0'
+    'AI_AGENT' => 'claude-code_2-1-193_agent'
+    'CLAUDE_CODE_ENTRYPOINT' => 'cli'
+    'GIT_EDITOR' => 'true'
+    'CLAUDE_CODE_EXECPATH' => '/opt/homebrew/Caskroom/claude-code/2.1.193/claude'
+    'CLAUDECODE' => '1'
+    'CLAUDE_CODE_SESSION_ID' => '7aa14e29-5523-41c5-85bf-cb06a3d6a4d5'
+    'CLAUDE_CODE_CHILD_SESSION' => '1'
+    'CLAUDE_EFFORT' => 'high'
+    '_' => '/Users/mk/Library/Application Support/Herd/bin/php74'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1783470167.9625
+    'REQUEST_TIME' => 1783470167
+    'argv' => [
+        0 => 'craft'
+        1 => '--version'
+    ]
+    'argc' => 2
+    'ENVIRONMENT' => 'production'
+    'APP_ID' => 'CraftCMS--40fadfbd-5acb-4346-8cc6-f36bc6a8bc5e'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'DB_DRIVER' => 'mysql'
+    'DB_SERVER' => '127.0.0.1'
+    'DB_PORT' => ''
+    'DB_DATABASE' => 'client-blmhe-org'
+    'DB_USER' => 'root'
+    'DB_PASSWORD' => ''
+    'DB_SCHEMA' => 'public'
+    'DB_TABLE_PREFIX' => ''
+    'SYSTEM_NAME' => 'Black Lives Matter in Higher Education'
+    'PRIMARY_SITE_URL' => 'http://blmhe.org'
+]
+2026-07-07 20:23:52 [-][-][-][warning][craft\db\mysql\Schema::releaseSavepoint] Tried to release a savepoint, but it does not exist: SQLSTATE[42000]: Syntax error or access violation: 1305 SAVEPOINT LEVEL1 does not exist
+The SQL being executed was: RELEASE SAVEPOINT LEVEL1
+2026-07-07 20:23:53 [-][-][-][warning][craft\db\mysql\Schema::releaseSavepoint] Tried to release a savepoint, but it does not exist: SQLSTATE[42000]: Syntax error or access violation: 1305 SAVEPOINT LEVEL2 does not exist
+The SQL being executed was: RELEASE SAVEPOINT LEVEL2
+2026-07-07 20:23:53 [-][-][-][warning][craft\db\mysql\Schema::releaseSavepoint] Tried to release a savepoint, but it does not exist: SQLSTATE[42000]: Syntax error or access violation: 1305 SAVEPOINT LEVEL1 does not exist
+The SQL being executed was: RELEASE SAVEPOINT LEVEL1
+2026-07-07 20:23:39 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'TMPDIR' => '/var/folders/4f/9dsmzbb52ml35xtltz6m4c8w0000gn/T/'
+    '__CFBundleIdentifier' => 'com.apple.Terminal'
+    'XPC_FLAGS' => '0x0'
+    'TERM' => 'xterm-256color'
+    'SSH_AUTH_SOCK' => '/var/run/com.apple.launchd.gHBuo0gNUH/Listeners'
+    'XPC_SERVICE_NAME' => '0'
+    'TERM_PROGRAM' => 'Apple_Terminal'
+    'COLORTERM' => 'truecolor'
+    'OSLogRateLimit' => '64'
+    'TERM_PROGRAM_VERSION' => '470.2'
+    'TERM_SESSION_ID' => 'E0875AB1-39DF-42D9-A740-D90ABC503DDD'
+    'SHELL' => '/bin/zsh'
+    'HOME' => '/Users/mk'
+    'LOGNAME' => 'mk'
+    'USER' => 'mk'
+    'PATH' => '/opt/homebrew/opt/postgresql@15/bin:/Users/mk/Library/Application Support/Herd/bin/:/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/Library/Apple/usr/bin:/Users/mk/.orbstack/bin'
+    'SHLVL' => '1'
+    'PWD' => '•••••••••••••••••••••••••••••••••••••••'
+    'OLDPWD' => '/Users/mk/Herd/Client-blmhe'
+    'HOMEBREW_PREFIX' => '/opt/homebrew'
+    'HOMEBREW_CELLAR' => '/opt/homebrew/Cellar'
+    'HOMEBREW_REPOSITORY' => '/opt/homebrew'
+    'FPATH' => '/opt/homebrew/share/zsh/site-functions:/usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.9/functions:/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh'
+    'INFOPATH' => '/opt/homebrew/share/info:'
+    'NVM_DIR' => '/Users/mk/Library/Application Support/Herd/config/nvm'
+    'NVM_CD_FLAGS' => '-q'
+    'NVM_BIN' => '/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/bin'
+    'NVM_INC' => '/Users/mk/Library/Application Support/Herd/config/nvm/versions/node/v20.19.5/include/node'
+    'HERD_PHP_83_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/83/'
+    'HERD_PHP_74_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/74/'
+    'HERD_PHP_82_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/82/'
+    'HERD_PHP_84_INI_SCAN_DIR' => '/Users/mk/Library/Application Support/Herd/config/php/84/'
+    'LANG' => 'en_US.UTF-8'
+    '_' => '/Users/mk/Library/Application Support/Herd/bin//php74'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x0:0x0'
+    'PHP_SELF' => 'craft'
+    'SCRIPT_NAME' => 'craft'
+    'SCRIPT_FILENAME' => 'craft'
+    'PATH_TRANSLATED' => 'craft'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1783470219.2952
+    'REQUEST_TIME' => 1783470219
+    'argv' => [
+        0 => 'craft'
+        1 => 'up'
+    ]
+    'argc' => 2
+    'ENVIRONMENT' => 'production'
+    'APP_ID' => 'CraftCMS--40fadfbd-5acb-4346-8cc6-f36bc6a8bc5e'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'DB_DRIVER' => 'mysql'
+    'DB_SERVER' => '127.0.0.1'
+    'DB_PORT' => ''
+    'DB_DATABASE' => 'client-blmhe-org'
+    'DB_USER' => 'root'
+    'DB_PASSWORD' => ''
+    'DB_SCHEMA' => 'public'
+    'DB_TABLE_PREFIX' => ''
+    'SYSTEM_NAME' => 'Black Lives Matter in Higher Education'
+    'PRIMARY_SITE_URL' => 'http://blmhe.org'
+]

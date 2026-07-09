@@ -1,0 +1,39 @@
+.aldrich-filter {
+  line-height: 1.4;
+
+  .aldrich-select {
+    display: inline;
+  }
+  span {
+    border-bottom: 3px solid theme-color("primary");
+    margin-right: 0.2em;
+  }
+  select {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &--black {
+    @include media-breakpoint-down(sm) {
+      padding-top: $grid-gutter-width;
+      padding-bottom: $grid-gutter-width;
+      background: theme-color("primary");
+      color: white;
+      span {
+        border-color: white;
+      }
+      .aldrich-select {
+        &:focus {
+          color: white;
+        }
+      }
+    }
+  }
+  &--seaside-aqua {
+    @include media-breakpoint-down(sm) {
+      padding-top: $grid-gutter-width;
+      padding-bottom: $grid-gutter-width;
+      background: theme-color("seaside-aqua");
+    }
+  }
+}

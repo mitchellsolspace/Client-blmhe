@@ -1,0 +1,11 @@
+// Works in conjunction with Foundation's Responsive Embed
+.pgs-responsive-embed {
+	.embed-responsive {
+		margin-bottom: 0;
+	}
+	&__caption {
+		// Start with .image-caption first before adjusting this
+		// @include pgs-global-spacer-can;
+		// @include pgs-global-spacer-treat;
+	}
+}

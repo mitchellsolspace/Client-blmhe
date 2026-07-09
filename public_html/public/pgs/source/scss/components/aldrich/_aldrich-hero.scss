@@ -1,0 +1,54 @@
+.object-fit .aldrich-hero__image-container img {
+  @supports (object-fit: cover) {
+    object-fit: cover;
+  }
+  @include media-breakpoint-down(sm) {
+    @supports (object-fit: cover) {
+      min-height: 320px;
+      height: 50vh;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    @supports (object-fit: cover) {
+      min-height: 800px;
+      height: 50vh;
+    }
+  }
+}
+
+// Most of this is disabled but keeping it around in case they want a caption
+.aldrich-hero {
+  // @include media-breakpoint-up(md) {
+  //   width: 90%;
+  //   margin-left: 5%;
+  // }
+  // &__caption {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   &-header {
+  //     // @include font-size($pgs-font-size-4);
+  //     // @include sans-serif-regular;
+  //     // @include padding-top($pgs-global-spacer-tree);
+  //     // @include padding-right($pgs-global-spacer-tree);
+  //     // @include padding-left($pgs-global-spacer-tree);
+  //     line-height: 1.4;
+  //     text-align: center;
+  //     background: white;
+  //     z-index: 1;
+  //     @include media-breakpoint-up(xs) {
+  //       max-width: 85%;
+  //       margin-top: -5%;
+  //     }
+  //     @include media-breakpoint-up(sm) {
+  //       max-width: 75%;
+  //     }
+  //     @include media-breakpoint-up(md) {
+  //       max-width: 60%;
+  //     }
+  //     @include media-breakpoint-up(lg) {
+  //       max-width: 50%;
+  //     }
+  //   }
+  // }
+}

@@ -1,0 +1,500 @@
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  yii\base\Component::trigger(): Implicitly marking parameter $event as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Component.php on line 601
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\StringHelper::asciiCharMap(): Implicitly marking parameter $language as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 123
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\StringHelper::between(): Implicitly marking parameter $offset as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 218
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\StringHelper::extractText(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 544
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\StringHelper::removeHtml(): Implicitly marking parameter $allowableTags as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1090
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\StringHelper::slice(): Implicitly marking parameter $end as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1331
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\StringHelper::slugify(): Implicitly marking parameter $language as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1350
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\StringHelper::substr(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1471
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\StringHelper::titleize(): Implicitly marking parameter $ignore as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1542
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\StringHelper::toAscii(): Implicitly marking parameter $language as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1575
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\StringHelper::trim(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1807
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\StringHelper::trimLeft(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1822
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\StringHelper::trimRight(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1837
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::__construct(): Implicitly marking parameter $encoding as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 61
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::between(): Implicitly marking parameter $offset as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 586
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::create(): Implicitly marking parameter $encoding as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 943
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::extractText(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 1308
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::lineWrap(): Implicitly marking parameter $delimiter as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 2635
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::lineWrapAfterWord(): Implicitly marking parameter $delimiter as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 2674
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::slice(): Implicitly marking parameter $end as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3759
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::split(): Implicitly marking parameter $limit as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3898
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::splitCollection(): Implicitly marking parameter $limit as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3940
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::substr(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4121
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::substring(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4149
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::titleize(): Implicitly marking parameter $ignore as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4297
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::titleize(): Implicitly marking parameter $word_define_chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4297
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::titleize(): Implicitly marking parameter $language as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4297
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::trim(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4601
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::trimLeft(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4625
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::trimRight(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4649
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::words(): Implicitly marking parameter $remove_short_values as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4944
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Stringy\Stringy::wordsCollection(): Implicitly marking parameter $remove_short_values as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4994
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Return type of Stringy\Stringy::offsetSet($offset, $value) should either be compatible with ArrayAccess::offsetSet(mixed $offset, mixed $value): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3011
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Return type of Stringy\Stringy::offsetUnset($offset) should either be compatible with ArrayAccess::offsetUnset(mixed $offset): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3032
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Return type of Stringy\Stringy::jsonSerialize() should either be compatible with JsonSerializable::jsonSerialize(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 2491
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  voku\helper\ASCII::to_ascii(): Implicitly marking parameter $replace_single_chars_only as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/portable-ascii/src/voku/helper/ASCII.php on line 770
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Craft::parseEnv(): Implicitly marking parameter $str as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/Craft.php on line 73
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Craft::cookieConfig(): Implicitly marking parameter $request as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/Craft.php on line 137
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\FileHelper::isSvg(): Implicitly marking parameter $magicFile as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/FileHelper.php on line 303
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\FileHelper::isGif(): Implicitly marking parameter $magicFile as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/FileHelper.php on line 321
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\FileHelper::zip(): Implicitly marking parameter $to as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/FileHelper.php on line 650
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\helpers\FileHelper::addFilesToZip(): Implicitly marking parameter $prefix as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/FileHelper.php on line 689
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\base\ApplicationTrait::updateTargetLanguage(): Implicitly marking parameter $useUserLanguage as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/base/ApplicationTrait.php on line 230
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  craft\base\ApplicationTrait::saveInfo(): Implicitly marking parameter $attributeNames as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/base/ApplicationTrait.php on line 722
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  yii\base\ErrorException::__construct(): Implicitly marking parameter $previous as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/ErrorException.php on line 43
+[07-Jul-2026 23:50:14 UTC] PHP Deprecated:  Constant E_STRICT is deprecated in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/ErrorException.php on line 103
+[07-Jul-2026 19:58:06 America/New_York] PHP Notice:  fwrite(): write of 2265 bytes failed with errno=32 Broken pipe in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/helpers/BaseConsole.php on line 742
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  yii\base\Component::trigger(): Implicitly marking parameter $event as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Component.php on line 601
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\StringHelper::asciiCharMap(): Implicitly marking parameter $language as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 123
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\StringHelper::between(): Implicitly marking parameter $offset as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 218
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\StringHelper::extractText(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 544
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\StringHelper::removeHtml(): Implicitly marking parameter $allowableTags as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1090
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\StringHelper::slice(): Implicitly marking parameter $end as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1331
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\StringHelper::slugify(): Implicitly marking parameter $language as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1350
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\StringHelper::substr(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1471
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\StringHelper::titleize(): Implicitly marking parameter $ignore as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1542
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\StringHelper::toAscii(): Implicitly marking parameter $language as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1575
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\StringHelper::trim(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1807
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\StringHelper::trimLeft(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1822
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\StringHelper::trimRight(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1837
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::__construct(): Implicitly marking parameter $encoding as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 61
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::between(): Implicitly marking parameter $offset as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 586
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::create(): Implicitly marking parameter $encoding as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 943
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::extractText(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 1308
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::lineWrap(): Implicitly marking parameter $delimiter as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 2635
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::lineWrapAfterWord(): Implicitly marking parameter $delimiter as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 2674
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::slice(): Implicitly marking parameter $end as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3759
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::split(): Implicitly marking parameter $limit as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3898
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::splitCollection(): Implicitly marking parameter $limit as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3940
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::substr(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4121
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::substring(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4149
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::titleize(): Implicitly marking parameter $ignore as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4297
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::titleize(): Implicitly marking parameter $word_define_chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4297
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::titleize(): Implicitly marking parameter $language as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4297
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::trim(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4601
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::trimLeft(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4625
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::trimRight(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4649
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::words(): Implicitly marking parameter $remove_short_values as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4944
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Stringy\Stringy::wordsCollection(): Implicitly marking parameter $remove_short_values as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4994
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Return type of Stringy\Stringy::offsetSet($offset, $value) should either be compatible with ArrayAccess::offsetSet(mixed $offset, mixed $value): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3011
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Return type of Stringy\Stringy::offsetUnset($offset) should either be compatible with ArrayAccess::offsetUnset(mixed $offset): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3032
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Return type of Stringy\Stringy::jsonSerialize() should either be compatible with JsonSerializable::jsonSerialize(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 2491
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  voku\helper\ASCII::to_ascii(): Implicitly marking parameter $replace_single_chars_only as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/portable-ascii/src/voku/helper/ASCII.php on line 770
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Craft::parseEnv(): Implicitly marking parameter $str as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/Craft.php on line 73
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  Craft::cookieConfig(): Implicitly marking parameter $request as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/Craft.php on line 137
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\FileHelper::isSvg(): Implicitly marking parameter $magicFile as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/FileHelper.php on line 303
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\FileHelper::isGif(): Implicitly marking parameter $magicFile as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/FileHelper.php on line 321
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\FileHelper::zip(): Implicitly marking parameter $to as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/FileHelper.php on line 650
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\FileHelper::addFilesToZip(): Implicitly marking parameter $prefix as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/FileHelper.php on line 689
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\base\ApplicationTrait::updateTargetLanguage(): Implicitly marking parameter $useUserLanguage as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/base/ApplicationTrait.php on line 230
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\base\ApplicationTrait::saveInfo(): Implicitly marking parameter $attributeNames as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/base/ApplicationTrait.php on line 722
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\web\ErrorHandler::_resolveTemplateTrace(): Implicitly marking parameter $traceLine as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php on line 195
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\config\GeneralConfig::getActivateAccountSuccessPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1590
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\config\GeneralConfig::getVerifyEmailPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1603
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\config\GeneralConfig::getVerifyEmailSuccessPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1616
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\config\GeneralConfig::getInvalidUserTokenPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1628
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\config\GeneralConfig::getLoginPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1640
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\config\GeneralConfig::getLogoutPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1652
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\config\GeneralConfig::getPostLoginRedirect(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1675
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\config\GeneralConfig::getPostLogoutRedirect(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1687
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\config\GeneralConfig::getSetPasswordPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1699
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\config\GeneralConfig::getSetPasswordRequestPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1712
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\config\GeneralConfig::getSetPasswordSuccessPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1724
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\helpers\ConfigHelper::localizedValue(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/ConfigHelper.php on line 102
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\web\Request::setIsCpRequest(): Implicitly marking parameter $isCpRequest as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Request.php on line 537
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\web\Request::_requestedSite(): Implicitly marking parameter $siteScore as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Request.php on line 1377
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  craft\web\Request::_getParam(): Implicitly marking parameter $name as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Request.php on line 1643
+[08-Jul-2026 00:12:23 UTC] PHP Deprecated:  yii\base\ErrorException::__construct(): Implicitly marking parameter $previous as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/ErrorException.php on line 43
+[08-Jul-2026 00:12:23 UTC] PHP Fatal error:  During inheritance of IteratorAggregate: Uncaught yii\base\ErrorException: Return type of yii\web\HeaderCollection::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/HeaderCollection.php:37
+Stack trace:
+#0 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php(76): yii\base\ErrorHandler->handleError(8192, 'Return type of ...', '/Users/mk/Herd/...', 37)
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/HeaderCollection.php(23): craft\web\ErrorHandler->handleError(8192, 'Return type of ...', '/Users/mk/Herd/...', 37)
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/composer/ClassLoader.php(576): include('/Users/mk/Herd/...')
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('/Users/mk/Herd/...')
+#4 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php(356): Composer\Autoload\ClassLoader->loadClass('yii\\web\\HeaderC...')
+#5 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Component.php(139): yii\web\Request->getHeaders()
+#6 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php(1089): yii\base\Component->__get('headers')
+#7 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php(737): yii\web\Request->getIsSecureConnection()
+#8 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Request.php(212): yii\web\Request->getHostInfo()
+#9 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/BaseObject.php(109): craft\web\Request->init()
+#10 [internal function]: yii\base\BaseObject->__construct(Array)
+#11 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(406): ReflectionClass->newInstanceArgs(Array)
+#12 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(165): yii\di\Container->build('craft\\web\\Reque...', Array, Array)
+#13 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('craft\\web\\Reque...', Array, Array)
+#14 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php(13): yii\BaseYii::createObject(Array)
+#15 [internal function]: {closure:/Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php:10}()
+#16 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(536): call_user_func_array(Object(Closure), Array)
+#17 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->invoke(Object(Closure), Array)
+#18 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Object(Closure))
+#19 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('request', true)
+#20 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Application.php(324): yii\base\Module->get('request', true)
+#21 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Application.php(160): craft\web\Application->get('request')
+#22 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/base/ApplicationTrait.php(1396): yii\web\Application->getRequest()
+#23 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Application.php(90): craft\web\Application->_preInit()
+#24 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/BaseObject.php(109): craft\web\Application->init()
+#25 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#26 [internal function]: yii\base\Application->__construct(Array)
+#27 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(406): ReflectionClass->newInstanceArgs(Array)
+#28 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(165): yii\di\Container->build('craft\\web\\Appli...', Array, Array)
+#29 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('craft\\web\\Appli...', Array, Array)
+#30 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/bootstrap/bootstrap.php(246): yii\BaseYii::createObject(Array)
+#31 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/bootstrap/web.php(51): require('/Users/mk/Herd/...')
+#32 /Users/mk/Herd/Client-blmhe-2/public_html/public/index.php(23): require('/Users/mk/Herd/...')
+#33 /Applications/Herd.app/Contents/Resources/valet/server.php(167): require('/Users/mk/Herd/...')
+#34 {main} in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/HeaderCollection.php on line 23
+[08-Jul-2026 00:12:23 UTC] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/portable-utf8/src/voku/helper/UTF8.php:5731) in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php on line 127
+[08-Jul-2026 00:12:23 UTC] An Error occurred while handling another error:
+Error: Class "yii\web\HeaderCollection" not found in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php:356
+Stack trace:
+#0 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Component.php(139): yii\web\Request->getHeaders()
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php(1089): yii\base\Component->__get('headers')
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php(737): yii\web\Request->getIsSecureConnection()
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Request.php(212): yii\web\Request->getHostInfo()
+#4 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/BaseObject.php(109): craft\web\Request->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(406): ReflectionClass->newInstanceArgs(Array)
+#7 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(165): yii\di\Container->build('craft\\web\\Reque...', Array, Array)
+#8 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('craft\\web\\Reque...', Array, Array)
+#9 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php(13): yii\BaseYii::createObject(Array)
+#10 [internal function]: {closure:/Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php:10}()
+#11 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(536): call_user_func_array(Object(Closure), Array)
+#12 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->invoke(Object(Closure), Array)
+#13 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Object(Closure))
+#14 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('request', true)
+#15 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Application.php(324): yii\base\Module->get('request', true)
+#16 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Application.php(160): craft\web\Application->get('request')
+#17 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/App.php(646): yii\web\Application->getRequest()
+#18 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php(26): craft\helpers\App::userConfig()
+#19 [internal function]: {closure:/Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php:25}()
+#20 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(536): call_user_func_array(Object(Closure), Array)
+#21 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->invoke(Object(Closure), Array)
+#22 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Object(Closure))
+#23 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('user', true)
+#24 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Application.php(324): yii\base\Module->get('user', true)
+#25 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Application.php(187): craft\web\Application->get('user')
+#26 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php(232): yii\web\Application->getUser()
+#27 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php(142): craft\web\ErrorHandler->_showExceptionView()
+#28 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): craft\web\ErrorHandler->renderException(Object(Error))
+#29 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php(63): yii\base\ErrorHandler->handleException(Object(Error))
+#30 [internal function]: craft\web\ErrorHandler->handleException(Object(Error))
+#31 {main}
+Previous exception:
+Error: Class "yii\web\HeaderCollection" not found in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php:356
+Stack trace:
+#0 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Component.php(139): yii\web\Request->getHeaders()
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php(1089): yii\base\Component->__get('headers')
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php(737): yii\web\Request->getIsSecureConnection()
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Request.php(212): yii\web\Request->getHostInfo()
+#4 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/BaseObject.php(109): craft\web\Request->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(406): ReflectionClass->newInstanceArgs(Array)
+#7 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(165): yii\di\Container->build('craft\\web\\Reque...', Array, Array)
+#8 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('craft\\web\\Reque...', Array, Array)
+#9 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php(13): yii\BaseYii::createObject(Array)
+#10 [internal function]: {closure:/Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php:10}()
+#11 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(536): call_user_func_array(Object(Closure), Array)
+#12 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->invoke(Object(Closure), Array)
+#13 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Object(Closure))
+#14 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('request', true)
+#15 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Application.php(324): yii\base\Module->get('request', true)
+#16 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Application.php(160): craft\web\Application->get('request')
+#17 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/App.php(646): yii\web\Application->getRequest()
+#18 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php(26): craft\helpers\App::userConfig()
+#19 [internal function]: {closure:/Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php:25}()
+#20 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(536): call_user_func_array(Object(Closure), Array)
+#21 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->invoke(Object(Closure), Array)
+#22 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Object(Closure))
+#23 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('user', true)
+#24 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Application.php(324): yii\base\Module->get('user', true)
+#25 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Application.php(187): craft\web\Application->get('user')
+#26 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php(232): yii\web\Application->getUser()
+#27 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php(142): craft\web\ErrorHandler->_showExceptionView()
+#28 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(288): craft\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#29 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#30 {main}
+$_SERVER = [
+    'USER' => 'mk',
+    'HOME' => '/Users/mk',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_PRIORITY' => 'u=0, i',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)',
+    'HTTP_HOST' => 'blmhe.test',
+    'PATH_INFO' => '',
+    'HERD_HOME' => '/Users/mk/Library/Application Support/Herd',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => 'blmhe.test',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '127.0.0.1',
+    'REMOTE_PORT' => '53359',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.25.4',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/Users/mk/Herd/Client-blmhe-2/public_html/public',
+    'DOCUMENT_URI' => '/Applications/Herd.app/Contents/Resources/valet/server.php',
+    'REQUEST_URI' => '/?herd=preview',
+    'SCRIPT_NAME' => '/index.php',
+    'SCRIPT_FILENAME' => '/Users/mk/Herd/Client-blmhe-2/public_html/public/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'herd=preview',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/',
+    'REQUEST_TIME_FLOAT' => 1783469543.708963,
+    'REQUEST_TIME' => 1783469543,
+    'argv' => [
+        'herd=preview',
+    ],
+    'argc' => 1,
+    'HERD_SITE_PATH' => '/Users/mk/Herd/Client-blmhe-2/public_html/public',
+    'ENVIRONMENT' => 'production',
+    'APP_ID' => 'CraftCMS--40fadfbd-5acb-4346-8cc6-f36bc6a8bc5e',
+    'SECURITY_KEY' => '3ljockBwTfaBYkULjxspYb0SNw9s0iAD',
+    'DB_DRIVER' => 'mysql',
+    'DB_SERVER' => '127.0.0.1',
+    'DB_PORT' => '',
+    'DB_DATABASE' => 'client-blmhe-org',
+    'DB_USER' => 'root',
+    'DB_PASSWORD' => '',
+    'DB_SCHEMA' => 'public',
+    'DB_TABLE_PREFIX' => '',
+    'SYSTEM_NAME' => 'Black Lives Matter in Higher Education',
+    'PRIMARY_SITE_URL' => 'http://blmhe.org',
+]
+[07-Jul-2026 20:13:36 America/New_York] PHP Fatal error:  Uncaught yii\web\HeadersAlreadySentException: Headers already sent. in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Response.php:366
+Stack trace:
+#0 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Response.php(339): yii\web\Response->sendHeaders()
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/ErrorHandler.php(136): yii\web\Response->send()
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php(147): yii\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(288): craft\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#4 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#5 {main}
+  thrown in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Response.php on line 366
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  yii\base\Component::trigger(): Implicitly marking parameter $event as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Component.php on line 601
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\StringHelper::asciiCharMap(): Implicitly marking parameter $language as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 123
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\StringHelper::between(): Implicitly marking parameter $offset as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 218
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\StringHelper::extractText(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 544
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\StringHelper::removeHtml(): Implicitly marking parameter $allowableTags as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1090
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\StringHelper::slice(): Implicitly marking parameter $end as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1331
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\StringHelper::slugify(): Implicitly marking parameter $language as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1350
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\StringHelper::substr(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1471
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\StringHelper::titleize(): Implicitly marking parameter $ignore as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1542
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\StringHelper::toAscii(): Implicitly marking parameter $language as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1575
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\StringHelper::trim(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1807
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\StringHelper::trimLeft(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1822
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\StringHelper::trimRight(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/StringHelper.php on line 1837
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::__construct(): Implicitly marking parameter $encoding as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 61
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::between(): Implicitly marking parameter $offset as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 586
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::create(): Implicitly marking parameter $encoding as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 943
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::extractText(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 1308
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::lineWrap(): Implicitly marking parameter $delimiter as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 2635
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::lineWrapAfterWord(): Implicitly marking parameter $delimiter as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 2674
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::slice(): Implicitly marking parameter $end as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3759
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::split(): Implicitly marking parameter $limit as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3898
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::splitCollection(): Implicitly marking parameter $limit as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3940
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::substr(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4121
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::substring(): Implicitly marking parameter $length as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4149
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::titleize(): Implicitly marking parameter $ignore as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4297
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::titleize(): Implicitly marking parameter $word_define_chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4297
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::titleize(): Implicitly marking parameter $language as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4297
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::trim(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4601
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::trimLeft(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4625
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::trimRight(): Implicitly marking parameter $chars as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4649
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::words(): Implicitly marking parameter $remove_short_values as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4944
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Stringy\Stringy::wordsCollection(): Implicitly marking parameter $remove_short_values as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 4994
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Return type of Stringy\Stringy::offsetSet($offset, $value) should either be compatible with ArrayAccess::offsetSet(mixed $offset, mixed $value): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3011
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Return type of Stringy\Stringy::offsetUnset($offset) should either be compatible with ArrayAccess::offsetUnset(mixed $offset): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 3032
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Return type of Stringy\Stringy::jsonSerialize() should either be compatible with JsonSerializable::jsonSerialize(): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/stringy/src/Stringy.php on line 2491
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  voku\helper\ASCII::to_ascii(): Implicitly marking parameter $replace_single_chars_only as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/portable-ascii/src/voku/helper/ASCII.php on line 770
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Craft::parseEnv(): Implicitly marking parameter $str as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/Craft.php on line 73
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  Craft::cookieConfig(): Implicitly marking parameter $request as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/Craft.php on line 137
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\FileHelper::isSvg(): Implicitly marking parameter $magicFile as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/FileHelper.php on line 303
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\FileHelper::isGif(): Implicitly marking parameter $magicFile as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/FileHelper.php on line 321
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\FileHelper::zip(): Implicitly marking parameter $to as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/FileHelper.php on line 650
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\FileHelper::addFilesToZip(): Implicitly marking parameter $prefix as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/FileHelper.php on line 689
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\base\ApplicationTrait::updateTargetLanguage(): Implicitly marking parameter $useUserLanguage as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/base/ApplicationTrait.php on line 230
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\base\ApplicationTrait::saveInfo(): Implicitly marking parameter $attributeNames as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/base/ApplicationTrait.php on line 722
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\web\ErrorHandler::_resolveTemplateTrace(): Implicitly marking parameter $traceLine as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php on line 195
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\config\GeneralConfig::getActivateAccountSuccessPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1590
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\config\GeneralConfig::getVerifyEmailPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1603
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\config\GeneralConfig::getVerifyEmailSuccessPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1616
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\config\GeneralConfig::getInvalidUserTokenPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1628
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\config\GeneralConfig::getLoginPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1640
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\config\GeneralConfig::getLogoutPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1652
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\config\GeneralConfig::getPostLoginRedirect(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1675
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\config\GeneralConfig::getPostLogoutRedirect(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1687
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\config\GeneralConfig::getSetPasswordPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1699
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\config\GeneralConfig::getSetPasswordRequestPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1712
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\config\GeneralConfig::getSetPasswordSuccessPath(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/GeneralConfig.php on line 1724
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\helpers\ConfigHelper::localizedValue(): Implicitly marking parameter $siteHandle as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/ConfigHelper.php on line 102
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\web\Request::setIsCpRequest(): Implicitly marking parameter $isCpRequest as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Request.php on line 537
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\web\Request::_requestedSite(): Implicitly marking parameter $siteScore as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Request.php on line 1377
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  craft\web\Request::_getParam(): Implicitly marking parameter $name as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Request.php on line 1643
+[08-Jul-2026 00:16:31 UTC] PHP Deprecated:  yii\base\ErrorException::__construct(): Implicitly marking parameter $previous as nullable is deprecated, the explicit nullable type must be used instead in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/ErrorException.php on line 43
+[08-Jul-2026 00:16:31 UTC] PHP Fatal error:  During inheritance of IteratorAggregate: Uncaught yii\base\ErrorException: Return type of yii\web\HeaderCollection::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/HeaderCollection.php:37
+Stack trace:
+#0 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php(76): yii\base\ErrorHandler->handleError(8192, 'Return type of ...', '/Users/mk/Herd/...', 37)
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/HeaderCollection.php(23): craft\web\ErrorHandler->handleError(8192, 'Return type of ...', '/Users/mk/Herd/...', 37)
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/composer/ClassLoader.php(576): include('/Users/mk/Herd/...')
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}('/Users/mk/Herd/...')
+#4 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php(356): Composer\Autoload\ClassLoader->loadClass('yii\\web\\HeaderC...')
+#5 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Component.php(139): yii\web\Request->getHeaders()
+#6 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php(1089): yii\base\Component->__get('headers')
+#7 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php(737): yii\web\Request->getIsSecureConnection()
+#8 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Request.php(212): yii\web\Request->getHostInfo()
+#9 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/BaseObject.php(109): craft\web\Request->init()
+#10 [internal function]: yii\base\BaseObject->__construct(Array)
+#11 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(406): ReflectionClass->newInstanceArgs(Array)
+#12 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(165): yii\di\Container->build('craft\\web\\Reque...', Array, Array)
+#13 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('craft\\web\\Reque...', Array, Array)
+#14 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php(13): yii\BaseYii::createObject(Array)
+#15 [internal function]: {closure:/Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php:10}()
+#16 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(536): call_user_func_array(Object(Closure), Array)
+#17 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->invoke(Object(Closure), Array)
+#18 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Object(Closure))
+#19 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('request', true)
+#20 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Application.php(324): yii\base\Module->get('request', true)
+#21 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Application.php(160): craft\web\Application->get('request')
+#22 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/base/ApplicationTrait.php(1396): yii\web\Application->getRequest()
+#23 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Application.php(90): craft\web\Application->_preInit()
+#24 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/BaseObject.php(109): craft\web\Application->init()
+#25 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#26 [internal function]: yii\base\Application->__construct(Array)
+#27 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(406): ReflectionClass->newInstanceArgs(Array)
+#28 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(165): yii\di\Container->build('craft\\web\\Appli...', Array, Array)
+#29 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('craft\\web\\Appli...', Array, Array)
+#30 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/bootstrap/bootstrap.php(246): yii\BaseYii::createObject(Array)
+#31 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/bootstrap/web.php(51): require('/Users/mk/Herd/...')
+#32 /Users/mk/Herd/Client-blmhe-2/public_html/public/index.php(23): require('/Users/mk/Herd/...')
+#33 /Applications/Herd.app/Contents/Resources/valet/server.php(167): require('/Users/mk/Herd/...')
+#34 {main} in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/HeaderCollection.php on line 23
+[08-Jul-2026 00:16:31 UTC] PHP Warning:  http_response_code(): Cannot set response code - headers already sent (output started at /Users/mk/Herd/Client-blmhe-2/public_html/vendor/voku/portable-utf8/src/voku/helper/UTF8.php:5731) in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php on line 127
+[08-Jul-2026 00:16:31 UTC] An Error occurred while handling another error:
+Error: Class "yii\web\HeaderCollection" not found in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php:356
+Stack trace:
+#0 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Component.php(139): yii\web\Request->getHeaders()
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php(1089): yii\base\Component->__get('headers')
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php(737): yii\web\Request->getIsSecureConnection()
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Request.php(212): yii\web\Request->getHostInfo()
+#4 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/BaseObject.php(109): craft\web\Request->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(406): ReflectionClass->newInstanceArgs(Array)
+#7 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(165): yii\di\Container->build('craft\\web\\Reque...', Array, Array)
+#8 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('craft\\web\\Reque...', Array, Array)
+#9 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php(13): yii\BaseYii::createObject(Array)
+#10 [internal function]: {closure:/Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php:10}()
+#11 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(536): call_user_func_array(Object(Closure), Array)
+#12 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->invoke(Object(Closure), Array)
+#13 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Object(Closure))
+#14 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('request', true)
+#15 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Application.php(324): yii\base\Module->get('request', true)
+#16 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Application.php(160): craft\web\Application->get('request')
+#17 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/App.php(646): yii\web\Application->getRequest()
+#18 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php(26): craft\helpers\App::userConfig()
+#19 [internal function]: {closure:/Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php:25}()
+#20 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(536): call_user_func_array(Object(Closure), Array)
+#21 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->invoke(Object(Closure), Array)
+#22 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Object(Closure))
+#23 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('user', true)
+#24 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Application.php(324): yii\base\Module->get('user', true)
+#25 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Application.php(187): craft\web\Application->get('user')
+#26 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php(232): yii\web\Application->getUser()
+#27 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php(142): craft\web\ErrorHandler->_showExceptionView()
+#28 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(135): craft\web\ErrorHandler->renderException(Object(Error))
+#29 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php(63): yii\base\ErrorHandler->handleException(Object(Error))
+#30 [internal function]: craft\web\ErrorHandler->handleException(Object(Error))
+#31 {main}
+Previous exception:
+Error: Class "yii\web\HeaderCollection" not found in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php:356
+Stack trace:
+#0 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Component.php(139): yii\web\Request->getHeaders()
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php(1089): yii\base\Component->__get('headers')
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Request.php(737): yii\web\Request->getIsSecureConnection()
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Request.php(212): yii\web\Request->getHostInfo()
+#4 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/BaseObject.php(109): craft\web\Request->init()
+#5 [internal function]: yii\base\BaseObject->__construct(Array)
+#6 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(406): ReflectionClass->newInstanceArgs(Array)
+#7 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(165): yii\di\Container->build('craft\\web\\Reque...', Array, Array)
+#8 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('craft\\web\\Reque...', Array, Array)
+#9 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php(13): yii\BaseYii::createObject(Array)
+#10 [internal function]: {closure:/Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php:10}()
+#11 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(536): call_user_func_array(Object(Closure), Array)
+#12 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->invoke(Object(Closure), Array)
+#13 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Object(Closure))
+#14 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('request', true)
+#15 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Application.php(324): yii\base\Module->get('request', true)
+#16 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Application.php(160): craft\web\Application->get('request')
+#17 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/helpers/App.php(646): yii\web\Application->getRequest()
+#18 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php(26): craft\helpers\App::userConfig()
+#19 [internal function]: {closure:/Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/config/app.web.php:25}()
+#20 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/Container.php(536): call_user_func_array(Object(Closure), Array)
+#21 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->invoke(Object(Closure), Array)
+#22 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/di/ServiceLocator.php(137): yii\BaseYii::createObject(Object(Closure))
+#23 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php(742): yii\di\ServiceLocator->get('user', true)
+#24 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Application.php(324): yii\base\Module->get('user', true)
+#25 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Application.php(187): craft\web\Application->get('user')
+#26 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php(232): yii\web\Application->getUser()
+#27 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/ErrorHandler.php(142): craft\web\ErrorHandler->_showExceptionView()
+#28 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/ErrorHandler.php(288): craft\web\ErrorHandler->renderException(Object(yii\base\ErrorException))
+#29 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#30 {main}
+$_SERVER = [
+    'USER' => 'mk',
+    'HOME' => '/Users/mk',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'HTTP_PRIORITY' => 'u=0, i',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)',
+    'HTTP_HOST' => 'blmhe.test',
+    'PATH_INFO' => '',
+    'HERD_HOME' => '/Users/mk/Library/Application Support/Herd',
+    'REDIRECT_STATUS' => '200',
+    'SERVER_NAME' => 'blmhe.test',
+    'SERVER_PORT' => '80',
+    'SERVER_ADDR' => '127.0.0.1',
+    'REMOTE_PORT' => '53404',
+    'REMOTE_ADDR' => '127.0.0.1',
+    'SERVER_SOFTWARE' => 'nginx/1.25.4',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'DOCUMENT_ROOT' => '/Users/mk/Herd/Client-blmhe-2/public_html/public',
+    'DOCUMENT_URI' => '/Applications/Herd.app/Contents/Resources/valet/server.php',
+    'REQUEST_URI' => '/?herd=preview',
+    'SCRIPT_NAME' => '/index.php',
+    'SCRIPT_FILENAME' => '/Users/mk/Herd/Client-blmhe-2/public_html/public/index.php',
+    'CONTENT_LENGTH' => '',
+    'CONTENT_TYPE' => '',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'herd=preview',
+    'FCGI_ROLE' => 'RESPONDER',
+    'PHP_SELF' => '/',
+    'REQUEST_TIME_FLOAT' => 1783469791.635561,
+    'REQUEST_TIME' => 1783469791,
+    'argv' => [
+        'herd=preview',
+    ],
+    'argc' => 1,
+    'HERD_SITE_PATH' => '/Users/mk/Herd/Client-blmhe-2/public_html/public',
+    'ENVIRONMENT' => 'production',
+    'APP_ID' => 'CraftCMS--40fadfbd-5acb-4346-8cc6-f36bc6a8bc5e',
+    'SECURITY_KEY' => '3ljockBwTfaBYkULjxspYb0SNw9s0iAD',
+    'DB_DRIVER' => 'mysql',
+    'DB_SERVER' => '127.0.0.1',
+    'DB_PORT' => '',
+    'DB_DATABASE' => 'client-blmhe-org',
+    'DB_USER' => 'root',
+    'DB_PASSWORD' => '',
+    'DB_SCHEMA' => 'public',
+    'DB_TABLE_PREFIX' => '',
+    'SYSTEM_NAME' => 'Black Lives Matter in Higher Education',
+    'PRIMARY_SITE_URL' => 'http://blmhe.org',
+]

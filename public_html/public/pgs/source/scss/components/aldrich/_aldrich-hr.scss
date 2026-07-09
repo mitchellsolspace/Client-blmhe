@@ -1,0 +1,17 @@
+$width-thin-hr: 1px;
+$width-regular-hr: 2px;
+
+.hr {
+  background-color: theme-color("primary");
+  border: none;
+  height: $width-regular-hr;
+  @include media-breakpoint-up(md) {
+    height: $width-thin-hr;
+  }
+  &--thin {
+    height: $width-thin-hr;
+  }
+  &--light {
+    background-color: white;
+  }
+}

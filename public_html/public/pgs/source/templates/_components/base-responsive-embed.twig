@@ -1,0 +1,16 @@
+{# Include foundation-responsive-embed #}
+
+<div class="pgs-responsive-embed {{pgsRespEmbedContainerClasses}}">
+	<div class="embed-responsive {{pgsRespEmbedClasses ?? 'embed-responsive-4by3'}}">
+	  {{pgsRespEmbedCode|raw}}
+	</div>
+	
+	{% set imageCaptionVars = {
+		imageCaptionTag : imageCaptionTag,
+		imageCaptionCaption : imageCaptionCaption,
+		imageCaptionClasses : imageCaptionClasses
+		}
+	%}
+	{% include "_components/base-image-caption" %}
+	
+</div>

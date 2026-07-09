@@ -1,0 +1,9 @@
+	{% set url = getenv('DEFAULT_SITE_URL') %}
+	{% for entry in craft.entries.section('XXX').all() %}
+	<url>
+		<loc>{{entry.url}}</loc>
+		<lastmod>{{entry.dateUpdated | date('Y-m-d\\TH:i:sP')}}</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	{% endfor %}

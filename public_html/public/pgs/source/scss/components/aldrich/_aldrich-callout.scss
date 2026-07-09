@@ -1,0 +1,31 @@
+$padding: 15px; 
+
+.callout {
+  padding: $padding 0;
+  @include pgs-shared-type-cat;
+  background: theme-color("canary-yellow");
+  position: relative;
+  z-index: 10;
+  &__toggle {
+    float: right;
+    position: relative;
+    margin-top: -$padding;
+    margin-right: -10px;
+    padding: 10px;
+    @include media-breakpoint-up(md) {
+      padding: 15px;
+    }
+  }
+  svg {
+    @include closeIcon;
+  }
+  &__text-container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,89 @@
+{#
+	This is a basic, image-only Swiper. Anything that needs more functionality should have a new compnent with a name like: base-swiper-image-and-video
+
+  Requires:
+  - js/components/swiper.js
+  - scss/components/_swiper.scss
+  - Lazysizes.js for the auto sizes attribute. That's the only feature from LazySizes that I'm using; lazy loading comes from swiper.js but swiper.js doesn't do auto sizes attribute.
+#}
+
+{% macro spinner() %}
+	<div class="swiper-lazy-preloader">
+		<div class="spinner">
+			<div class="rect1"></div>
+			<div class="rect2"></div>
+			<div class="rect3"></div>
+			<div class="rect4"></div>
+			<div class="rect5"></div>
+		</div>
+	</div>
+{% endmacro %}
+
+{# Hiding this for medium down because a mobile-friendly design follows #}
+<div class="swiper js-swiper-feature swiper--feature d-none d-md-block {{swiperClasses}}" aria-hidden="true">
+
+	<div class="swiper-container js-swiper-feature-container">
+		<div class="swiper-button-prev swiper-button-disabled">PREV</div>
+    <ol class="swiper-wrapper">
+			{% for image in images %}
+      <li class="swiper-slide embed-responsive embed-responsive-2by1">
+        {% if image.link %}<a href="{{image.link}}">{% endif %}
+          <img src="{{image.swiperImageLowQuality}}" data-src="{{image.swiperImage1x}}" data-srcset="{% for im in image.swiperImages %}{{im.img}} {{im.width}}w{% if loop.last != true %},{% endif %}{% endfor %}" class="swiper-lazy lazyload swiper__image" alt="{{image.alt}}" width="{{image.width}}" height="{{image.height}}" sizes="auto">
+          {# {{_self.spinner}} #}
+          <div class="text-left">
+            <div class="pgs-global-spacer-eyebrow">{% if image.caption.eyebrow %}<{{image.caption.eyebrowTag}} class="swiper__eyebrow">{{image.caption.eyebrow}}</{{image.caption.eyebrowTag}}>{% endif %}</div>
+            <p class="swiper__title">{{image.caption.title}}</p>
+          </div>
+        {% if image.link %}</a>{% endif %}
+      </li>
+			{% endfor %}
+
+		</ol>
+		<div class="swiper-button-next swiper-button-disabled">NEXT</div>
+	</div>
+
+</div>
+
+<div class="d-md-none swiper--feature">
+  <ol class="vspace-xs-shallow-3">
+    {% for image in images %}
+      <li>
+        {% if loop.index == 1 %}
+          {% include "_components/base-image-container" with {
+            imageContainerClasses: "swiper__image",
+
+            lazyImageClass: null,
+            lazyImageImgLowQuality: {
+              img : image.swiperImageLowQuality,
+              width : '50'
+            },
+            lazyImageFallbackImg: image.swiperImage1x,
+            lazyImageImages: image.swiperImages,
+            lazyImageAltText: image.alt,
+            lazyImageShowLowQualityImageWhileLoading: true,
+            lazyImageShowAutoSize: true,
+
+            lazyImageWrap : false,
+            
+            imageCaptionTag : "figcaption",
+            imageCaptionCaption : null,
+            imageCaptionClasses : null,
+
+            height: image.height,
+            width: image.width
+
+          } %}
+        {% endif %}
+
+        {% if image.caption.eyebrow %}<{{image.caption.eyebrowTag}} class="swiper__eyebrow pgs-global-spacer-eyebrow">{{image.caption.eyebrow}}</{{image.caption.eyebrowTag}}>{% endif %}
+        {% if image.caption.title %}<h3 class="swiper__title">{{image.caption.title}}</h3>{% endif %}
+        {% if loop.last == false %}
+          <div class="vspace-xs-3"></div>
+          {% include "_components/base-hr" with {
+            hrClasses : "hr--thin"
+          } %}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
+</div>

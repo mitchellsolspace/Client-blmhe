@@ -1,0 +1,203 @@
+$mobileNavHeight: 46px;
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  @include media-breakpoint-down(sm) {
+    justify-content: initial;
+    align-items: center;
+  }
+  @include media-breakpoint-up(md) {
+    margin-top: $grid-gutter-width;
+    padding-bottom: 4px;
+    align-items: flex-end;
+  }
+  &__spacer {
+    display: none;
+    @include media-breakpoint-only(md) {
+      display: block;
+    }
+  }
+
+  &__logo {
+    z-index: 4;
+    @include media-breakpoint-down(sm) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background: theme-color("off-white");
+      height: $mobileNavHeight;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--small {
+      // background:green;
+      position: relative;
+      left: 24px;
+      svg {
+        width: 200px;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    &--large {
+      // background:blue;
+      svg {
+        width: 300px;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  &__menu {
+    &-item {
+      &--active {
+        & > a {
+          color: theme-color("primary") !important;
+        }
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      overflow: scroll;
+      visibility: hidden;
+      height: 0;
+      position: absolute;
+      background: theme-color("off-white");
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 3;
+      height: 100%;
+      opacity: 0;
+      margin-top: 8px;
+      padding: 0 10px 50px 10px;
+      // svg {
+      //   height: 18px;
+      //   width: 18px;
+      //   display: inline;
+      //   visibility: hidden;
+      // }
+      &-list {
+        text-align: center;
+        padding-top: $mobileNavHeight;
+      }
+      &--is-open {
+        visibility: visible;
+        opacity: 1;
+      }
+      &-item {
+        // NOTE: I'm removing spacing for now because I think it will come during my component build phase of type and spacing
+        // padding-left: 30px;
+        // padding-top: 3.5px;
+        // padding-bottom: 3.5px;
+        font-size: 26px;
+        @include sans-serif-bold;
+        line-height: 1.2;
+        padding-bottom: 15px;
+        a {
+          color: theme-color("medium-gray");
+        }
+        &-child {
+          font-size: 21.66px; // This is in proportion of 50px to 60px with my 60px equivalent coming from the 26px above
+          @include sans-serif-bold;
+          padding-top: 8px;
+          &--active {
+            a {
+              color: theme-color("primary");
+            }
+          }
+        }
+      }
+    }
+    &--is-open {
+      .main-nav__menu-item {
+        &--active {
+          svg {
+            visibility: visible;
+            left: -9px;
+            position: relative;
+            top: -1px;
+          }
+        }
+      }
+    }
+    @include media-breakpoint-up(md) {
+      text-align: right;
+      position: relative;
+      top: 3px;
+      &-item {
+        display: inline-block;
+        padding: 5px 0 0 10px; 
+        @include font-size($pgs-font-size-2);
+        @include sans-serif-bold;
+        &:last-child {
+          padding-right: 0;
+        }
+        a {
+          padding: 0 0 4px 10px;
+          color: theme-color("medium-gray");
+          transition: color 0.25s;
+          &:hover {
+            color: theme-color("primary");
+            transition: color 0.25s;
+          }
+        }
+        // &--active {
+        //   a {
+        //     color: theme-color("primary");
+        //   }
+        // }
+        &-child {
+          display: none;
+        }
+      }
+      svg {
+        display: none;
+      }
+    }
+  }
+  &__toggler {
+    z-index: 5;
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      left: -15px;
+    }
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
+  .hamburger {
+    transform: scale(0.7);
+    padding: 10px;
+    &:hover {
+      opacity: 1;
+    }
+    &-box,
+    &-inner,
+    &-inner:after,
+    &-inner:before {
+      // width: 25px;
+      border-radius: 0;
+    }
+    // &-box {
+    //   top: -9px;
+    // }
+    // &-inner:before {
+    //   top:-8px
+    // }
+    // &-inner:after {
+    //   top:8px
+    // }
+    // &.is-active {
+    //   .hamburger-box {
+    //     top: 0px;
+    //   }
+    // }
+  }
+}

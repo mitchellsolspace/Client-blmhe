@@ -1,0 +1,58 @@
+.main-nav-links {
+  @include serif;
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+    @include font-size($pgs-font-size-1);
+    line-height: 1.4;
+    li {
+      margin-bottom: 10px;
+    }
+    .form-inline {
+      display: inline-block;
+    }
+    // This .form-group and .form-control undoes Bootstrap's standard disabling of inline forms on mobile
+    .form-group {
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-flex: 0;
+      flex: 0 0 auto;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-flow: row wrap;
+      -webkit-box-align: center;
+      align-items: center;
+      margin-bottom: 0;
+    }
+    .form-control {
+      display: inline-block;
+      width: auto;
+      vertical-align: middle;
+      font-size: initial; // This sets the form to 16px so the form doesn't zoom. Otherwise Bootstrap will set it small because I've made it a small form in its class
+    }
+    &__search {
+      margin-top: 15px;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    @include font-size($pgs-font-subsize-2);
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    li {
+      margin-top: 10px;
+      padding-right: $grid-gutter-width;
+      &.no-padding {
+        padding: 0;
+      }
+    }
+  }
+  
+  &__search {
+    &-icon {
+      background: url("../node_modules/bootstrap-icons/icons/search.svg")
+        no-repeat center;
+    }
+  }
+}
+

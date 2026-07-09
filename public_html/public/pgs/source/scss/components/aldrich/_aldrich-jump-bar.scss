@@ -1,0 +1,43 @@
+.jump-bar {
+  @include pgs-shared-type-canyon;
+  text-transform: uppercase;
+  text-align: left;
+  z-index: 1;
+  background: theme-color("off-white");
+  padding: 10px 0;
+  @include media-breakpoint-up(md) {
+    text-align: center;
+  }
+  &--light-gray {
+    background: theme-color("light-gray");
+  }
+  .list-inline {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+    // padding: 5px 0;
+  }
+  .list-inline-item {
+    margin-right: 0;
+  }
+  a {
+    @include yellow-highlight;
+    background: none;
+    text-decoration: none !important;
+    &.active {
+      @include yellow-highlight;
+    }
+  }
+
+  // This is a magic number that may need to be adjusted. I'm using this rather hacky version instead of the newer property scroll-margin-top because Safari as of 4/2020 does not support it
+  &__scroll-margin {
+    padding-top: 43px;
+    margin-top: -43px;
+  }
+}

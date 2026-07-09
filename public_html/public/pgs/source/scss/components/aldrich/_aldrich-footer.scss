@@ -1,0 +1,25 @@
+.aldrich-footer {
+  @include sans-serif-regular;
+  @include font-size($pgs-font-size-1);
+  line-height: 1.6;
+  strong {
+    @include sans-serif-bold;
+  }
+  svg {
+    width: 20%;
+    height: auto;
+  }
+  .form-group {
+    max-width: 50vw;
+    min-width: 150px;
+  }
+
+  @include media-breakpoint-up(sm) {
+    svg {
+      width: 50%;
+      height: auto;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

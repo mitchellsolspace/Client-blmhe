@@ -1,0 +1,24 @@
+<{{content.eyebrow.tag}} class="longform longform__eyebrow aldrich-visit__eyebrow">{{content.eyebrow.text}}</{{content.eyebrow.tag}}>
+<table class="aldrich-visit">
+	<tr class="sr-only">
+		<th>
+			{{content.headerLeft}}
+		</th>
+		<th>
+			{{content.headerRight}}
+		</th>
+	</tr>
+	{% for row in content.rows %}
+	<tr class="aldrich-visit__listing">
+		<td class="aldrich-visit__dots">
+			<span class="aldrich-visit__day">{{row.left|raw}}</span>
+		</td>
+		<td class="aldrich-visit__time">
+			<span class="aldrich-visit__day">{{row.right}}</span>
+		</td>
+	</tr>
+	{% endfor %}
+	
+	
+
+</table>

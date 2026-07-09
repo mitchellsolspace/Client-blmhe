@@ -1,0 +1,184 @@
+{# #}
+{# #}
+{# #}
+{# This is for the initial component build only. When it's done, integrate into the longform file in _partials #}
+{# #}
+{# #}
+{# #}
+
+
+	<div class="longform"> 
+	
+	{# Aldrich not using blockquote #}
+	{# <blockquote>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</blockquote> #}
+
+	<p>Paragraph one lorem ipsum dolor sit amet <a href="#">consectetur adipisicing elit</a>, sed do <em>eiusmod tempor incididunt</em> ut labore et dolore magna aliqua. <strong>Ut enim ad minim veniam</strong>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="longform--gray">
+		<p>Gray Paragraph one lorem ipsum dolor sit amet <a href="#">consectetur adipisicing elit</a>, sed do <em>eiusmod tempor incididunt</em> ut labore et dolore magna aliqua. <strong>Ut enim ad minim veniam</strong>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<ul>
+		<li>Regular unordered list items In voluptate velit esse cillum. Donec sodales, orci eu dictum tincidunt, lectus neque consequat ante, sed fringilla mi ipsum blandit purus. Integer egestas libero ut turpis auctor pharetra. Etiam quis faucibus felis. Quisque tempus gravida enim eu egestas. In mollis purus at pellentesque efficitur.
+			<ul>
+				<li>In voluptate velit esse cillum. Donec sodales, orci eu dictum tincidunt, lectus neque consequat ante, sed fringilla mi ipsum blandit purus. Integer egestas libero ut turpis auctor pharetra. Etiam quis faucibus felis. Quisque tempus gravida enim eu egestas. In mollis purus at pellentesque efficitur.</li>
+				<li>In voluptate velit esse cillum. Donec sodales, orci eu dictum tincidunt, lectus neque consequat ante, sed fringilla mi ipsum blandit purus. Integer egestas libero ut turpis auctor pharetra. Etiam quis faucibus felis. Quisque tempus gravida enim eu egestas. In mollis purus at pellentesque efficitur.</li>
+				<li>In voluptate velit esse cillum. Donec sodales, orci eu dictum tincidunt, lectus neque consequat ante, sed fringilla mi ipsum blandit purus. Integer egestas libero ut turpis auctor pharetra. Etiam quis faucibus felis. Quisque tempus gravida enim eu egestas. In mollis purus at pellentesque efficitur.</li>
+			</ul>
+		</li>
+		<li>In voluptate velit esse cillum</li>
+		<li>In voluptate velit esse cillum</li>
+	</ul>
+
+	<ol>
+		<li>Regular ordered list items In voluptate velit esse cillum
+			<ol>
+				<li>In voluptate velit esse cillum</li>
+				<li>In voluptate velit esse cillum</li>
+				<li>In voluptate velit esse cillum</li>
+			</ol>
+		</li>
+		<li>In voluptate velit esse cillum</li>
+		<li>In voluptate velit esse cillum</li>
+	</ol>
+
+	{# {% include "_components/base-hr" with {
+		hrClasses : "hr--thin"
+	} %} #}
+
+	{#
+					- Use as many images as you need in lazyImageImages with their correct size and width declarations
+					#}
+
+	{% set placeholderImage = "http://placekitten.com/g/2000/1000" %}
+
+	{# Plain ol' image #}
+	{% include "_components/base-image-container" with {
+		imageContainerClasses: "longform__image",
+
+		lazyImageClass: null,
+		lazyImageImgLowQuality: {
+			img : placeholderImage,
+			width : '100'
+		},
+		lazyImageFallbackImg: placeholderImage,
+		lazyImageImages: [
+			{
+				img : placeholderImage,
+				width : '400'
+			},
+			{
+				img : placeholderImage,
+				width : '900'
+			},
+			{
+				img : placeholderImage,
+				width : '600'
+			},
+			{
+				img : placeholderImage,
+				width : '800'
+			},
+			{
+				img : placeholderImage,
+				width : '200'
+			}
+		],
+		lazyImageAltText: "Test Alt Text",
+		lazyImageShowLowQualityImageWhileLoading: true,
+		lazyImageShowAutoSize: true,
+
+		lazyImageWrap : false,
+		
+		imageCaptionTag : "figcaption",
+		imageCaptionCaption : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mi magna, dictum vel porttitor nec, sodales vel leo. Cras non dapibus augue. Mauris hendrerit tincidunt porta. Sed turpis orci, condimentum at nunc in, sollicitudin varius magna. Suspendisse velit ligula, porta vel felis at, sollicitudin laoreet odio. Vivamus viverra enim eget nisl sodales, vitae gravida odio convallis. In id lorem vulputate mauris porta tempus eu a dolor. Curabitur sollicitudin lacus id elit luctus, tincidunt viverra metus dictum. Maecenas placerat arcu id nisi sodales lobortis. Maecenas odio ligula, fringilla at efficitur ac, feugiat molestie tortor. Suspendisse viverra nunc ut urna auctor elementum. Maecenas urna nulla, varius sit amet ultricies a, rutrum eget purus. Integer efficitur lectus turpis, eu iaculis nisi varius vestibulum. Praesent sagittis viverra tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel velit massa.
+
+",
+		imageCaptionClasses : none,
+
+		height: 1000,
+    width: 2000
+
+	}
+	%}
+
+	{% include "_components/aldrich/_aldrich-swiper-slideshow" with {
+		swiperClasses: "longform__slideshow",
+		images: [
+			{
+				swiperImageLowQuality : placeholderImageLow,
+				swiperImage1x : placeholderImage,
+				swiperImages : [
+					{
+						img : placeholderImage,
+						width : '200'
+					},
+					{
+						img : placeholderImage,
+						width : '400'
+					},
+					{
+						img : placeholderImage,
+						width : '600'
+					},
+					{
+						img : placeholderImage,
+						width : '800'
+					},
+					{
+						img : placeholderImage,
+						width : '1200'
+					}
+				],
+				alt : "Swiper Alt Text",
+				caption: {
+					tag: null,
+					caption: "Lorem ipsum dolor"
+				}
+
+			},
+			{
+				swiperImageLowQuality : placeholderImageLow,
+				swiperImage1x : placeholderImage,
+				swiperImages : [
+					{
+						img : placeholderImage,
+						width : '200'
+					},
+					{
+						img : placeholderImage,
+						width : '400'
+					},
+					{
+						img : placeholderImage,
+						width : '600'
+					},
+					{
+						img : placeholderImage,
+						width : '800'
+					},
+					{
+						img : placeholderImage,
+						width : '1200'
+					}
+				],
+				alt : "Swiper Alt Text",
+				caption: {
+					tag: null,
+					caption: "Test caption"
+				}
+
+			}
+		]
+	} %}
+	{% include "_components/base-responsive-embed" with {
+
+		pgsRespEmbedContainerClasses: "longform__responsive-embed",
+		pgsRespEmbedClasses: "embed-responsive-2by1",
+		pgsRespEmbedCode : '<iframe width="560" height="315" src="https://www.youtube.com/embed/G_gZPY7unw4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+
+		imageCaptionTag : "div",
+		imageCaptionCaption : "Lorem ipsum dolor",
+		imageCaptionClasses : null
+
+	} %}
+
+</div>

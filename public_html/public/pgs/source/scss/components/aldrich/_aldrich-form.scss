@@ -1,0 +1,20 @@
+.aldrich-form {
+  @include pgs-shared-type-cat;
+  .form-group {
+    line-height: 1.6;
+    label {
+      margin-bottom: 0;
+    }
+  }
+  input[type="checkbox"]  {
+    top: -3px
+  }
+  &__message {
+    a {
+      text-decoration: underline;
+    }
+    &--error {
+      color: #9d0000
+    }
+  }
+}

@@ -1,0 +1,18 @@
+/* For use with Lazysizes jQuery plugin */
+
+// Hide if JS isn't enabled
+.no-js img.lazyload {
+  display: none;
+}
+
+// 2019-11 I had to disable these because of a Safari rendering bug that kept the shadow on the images even after they were lazyloaded.
+
+// These blur Lazy Sizes image before they load...
+.blur-up {
+  @include blur;
+}
+
+// ...and then clear it
+.blur-up.lazyloaded {
+  @include blur-resolve;
+}

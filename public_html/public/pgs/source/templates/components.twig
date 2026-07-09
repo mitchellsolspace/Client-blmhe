@@ -1,0 +1,182 @@
+{% extends "_layout" %}
+
+{% block head %}
+	{{ parent() }}
+{% endblock %}
+
+{% block main %}
+
+	{% set placeholderImageLow = "http://placekitten.com/g/50/25" %}
+	{% set placeholderImage = "http://placekitten.com/g/2000/1000" %}
+
+	<style>
+		.component-name {
+
+			font-family: monaco;
+			font-size: 150%;
+			font-weight: bold;
+			line-height: 1.2;
+			text-align: right;
+		}
+		.component-variant {
+
+			font-family: monaco;
+			font-size: 75%;
+		}
+	</style>
+
+	<div class="container vspace-xs-shallow-6">
+
+		<div class="row">
+      <div class="col vspace-xs-shallow-3">
+        <h1 class="component-name">Timeline Entry</h1>
+        <div
+          class="vspace-xs-shallow-3">
+          {% include "_components/blm/_timeline-entry" with {
+            classes: null,
+            title: "1/2013 BLM NATIONALLY",
+            image: "http://placekitten.com/200/100",
+            content: "<p>Content</p><p>Content</p>"
+          } %}
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col vspace-xs-shallow-3">
+        <h1 class="component-name">Video</h1>
+        <div
+          class="vspace-xs-shallow-3">
+          {% include "_components/blm/_video" with {
+            content: '<iframe width="560" height="315" src="https://www.youtube.com/embed/vQpySz8kOKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+          } %}
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col vspace-xs-shallow-3">
+        <h1 class="component-name">Title</h1>
+        <div
+          class="vspace-xs-shallow-3">
+          {% include "_components/blm/_title" with {
+            tag: "h1",
+            classes: null,
+            text: "Interviews"
+          } %}
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col vspace-xs-shallow-3">
+        <h1 class="component-name">Longform</h1>
+        <div
+          class="vspace-xs-shallow-3">
+          {# Don't use this component, but use it as reference for when you build the longform partial #}
+          {% include "_components/test-longform" with {
+            classes: null
+          } %}
+        </div>
+      </div>
+    </div>
+
+		<div class="row">
+			<div class="col vspace-xs-shallow-3">
+				<h1 class="component-name">Image (picture)</h1>
+				{# Be sure to list from largest minWidth to smallest minWidth #}
+				{% include "_components/base-picture-container" with {
+          imageContainerClasses: null,
+          classes: "",
+          fallbackImg: placeholderImage,
+          images: [
+            {
+              minWidth : 1000,
+              images : [
+                {
+                  img : "http://placekitten.com/g/500/250",
+                  width : '1000'
+                },
+                {
+                  img : "http://placekitten.com/g/1000/500",
+                  width : '1500'
+                }
+              ]
+            },
+            {
+              minWidth : 0,
+              images : [
+                {
+                  img : "http://placekitten.com/g/200/200",
+                  width : '200'
+                }
+              ]
+            }
+            
+            
+          ],
+          alt: "Test Alt Text",
+          
+          imageCaptionTag : "figcaption",
+          imageCaptionCaption : null,
+          imageCaptionClasses : null,
+
+        } %}
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col vspace-xs-shallow-3">
+				<h1 class="component-name">Image (srcset)</h1>
+				{% include "_components/base-image-container" with {
+          imageContainerClasses: "",
+
+          lazyImageClass: null,
+          lazyImageImgLowQuality: {
+            img : placeholderImageLow,
+            width : '50'
+          },
+          lazyImageFallbackImg: placeholderImage,
+          lazyImageImages: [
+            {
+              img : placeholderImage,
+              width : '200'
+            },
+            {
+              img : placeholderImage,
+              width : '400'
+            },
+            {
+              img : placeholderImage,
+              width : '600'
+            },
+            {
+              img : placeholderImage,
+              width : '800'
+            },
+            {
+              img : placeholderImage,
+              width : '1000'
+            }
+          ],
+          lazyImageAltText: "Test Alt Text",
+          lazyImageShowLowQualityImageWhileLoading: true,
+          lazyImageShowAutoSize: true,
+
+          lazyImageWrap : false,
+          
+          imageCaptionTag : "figcaption",
+          imageCaptionCaption : null,
+          imageCaptionClasses : null,
+
+          height: 1000,
+          width: 2000
+
+        } %}
+			</div>
+		</div>
+
+	</div>
+
+
+{% endblock %}

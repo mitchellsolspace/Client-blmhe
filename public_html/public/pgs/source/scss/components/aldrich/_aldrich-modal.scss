@@ -1,0 +1,23 @@
+.aldrich-modal {
+  .modal-content {
+    border-radius: 0;
+    background: theme-color("nostalgic-blue");
+    border: 0;
+  }
+  &__title {
+    @include pgs-shared-type-cattle;
+  }
+  &__description {
+    @include pgs-shared-type-delay;
+  }
+  &__close {
+    float: right;
+    padding: 15px;
+    left: 15px;
+    position: relative;
+    top: -15px;
+    svg {
+      @include closeIcon;
+    }
+  }
+}

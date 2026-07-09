@@ -1,0 +1,208 @@
+// SHARED BACKGROUND
+
+body {
+  background: theme-color("off-white");
+}
+
+.background-off-white {
+  background: theme-color("off-white");
+}
+.background-light-gray {
+  background: theme-color("light-gray");
+}
+.background-dark-gray {
+  background: theme-color("dark-gray");
+}
+.background-black {
+  background: theme-color("primary");
+  @include media-breakpoint-down(sm) {
+    &-sm {
+      background: theme-color("primary");
+    }
+  }
+}
+
+.background-seaside-aqua {
+  background: theme-color("seaside-aqua");
+  @include media-breakpoint-down(sm) {
+    &-sm {
+      background: theme-color("seaside-aqua");
+    }
+  }
+}
+.background-nostalgic-blue {
+  background: theme-color("nostalgic-blue");
+}
+.background-bright-lime {
+  background: theme-color("bright-lime");
+}
+
+// SHARED LAYOUT
+
+// Bootstrap default is 10px but I'm bumping it up to 16px;
+.container {
+  padding-left: $grid-gutter-width;
+  padding-right: $grid-gutter-width;
+  &--full-width-sm {
+    @include media-breakpoint-down(sm) {
+      padding-left: 0;
+      padding-right: 0; 
+    }
+  }
+}
+
+.row {
+  &--no-gutters-sm {
+    @include media-breakpoint-down(sm) {
+      margin-right: 0;
+      margin-left: 0;
+
+      > .col,
+      > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+
+// SHARED SPACING
+
+// $pgs-component-spacer-yard: $pgs-font-subsize-4;
+// $pgs-component-spacer-cap: $pgs-font-subsize-3;
+
+// GLOBAL SPACING
+
+.pgs-global-spacer-eyebrow {
+  @include rfs($pgs-font-subsize-4, margin-bottom);
+}
+
+@mixin image-margin-bottom {
+  @include rfs($pgs-font-subsize-2, margin-bottom);
+}
+
+// .pgs-global-spacer-mat {
+//   @include media-breakpoint-down(md) {
+//     padding-top: $pgs-font-size-3;
+//   }
+//   @include media-breakpoint-up(md) {
+//     padding-top: $pgs-font-size-6;
+//   }
+// }
+
+// SHARED BLUR
+
+@mixin blur {
+  filter: blur(5px);
+  transition: filter 0.25s;
+  -webkit-transition: filter 0.25s;
+  // Use this if I have rendering problems. It forces hardware acceleration to remove rendering quirk discovered in a buil 11/2019
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+@mixin blur-resolve {
+  filter: none !important;
+}
+
+// SHARED OTHER
+
+@mixin closeIcon {
+  height: auto;
+  width: 22px;
+  @include media-breakpoint-up(md) {
+    width: 15px;
+  }
+}
+
+@mixin yellow-highlight {
+  background: theme-color("canary-yellow");
+  display: inline-block;
+  padding: 0.25em 0.5625em 0.125em 0.5625em;
+}
+
+// SHARED TYPE
+
+@mixin pgs-shared-type-canyon {
+  @include sans-serif;
+  text-transform: uppercase;
+  @include font-size($pgs-font-size-4);
+  line-height: 1.4;
+}
+
+@mixin pgs-shared-type-creep {
+  @include sans-serif-two;
+  text-transform: uppercase;
+  font-size: 9vw;
+  line-height: 1.4;
+  @include media-breakpoint-up(lg) {
+    font-size: 6vw;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 4vw;
+  }
+}
+
+// @mixin pgs-shared-type-delay {
+//   @include sans-serif-regular;
+//   @include media-breakpoint-down(sm) {
+//     @include font-size($pgs-font-size-2);
+//   }
+//   @include media-breakpoint-up(md) {
+//     @include font-size($pgs-font-size-1);
+//   }
+//   line-height: 1.6;
+//   em {
+//     @include sans-serif-oblique;
+//   }
+// }
+
+// @mixin pgs-shared-type-kite {
+//   @include sans-serif-regular;
+//   @include font-size($pgs-font-size-2);
+//   line-height: 1.6;
+//   em {
+//     @include sans-serif-oblique;
+//   }
+// }
+
+// @mixin pgs-shared-type-cattle {
+//   @include sans-serif-bold;
+//   @include media-breakpoint-down(sm) {
+//     @include font-size($pgs-font-size-3);
+//   }
+//   @include media-breakpoint-up(md) {
+//     @include font-size($pgs-font-size-2);
+//   }
+//   line-height: 1.6;
+//   em {
+//     @include sans-serif-bold-oblique;
+//   }
+// }
+
+// @mixin pgs-shared-type-fence {
+//   @include sans-serif-bold;
+//   @include font-size($pgs-font-size-4);
+//   line-height: 1.4;
+//   em {
+//     @include sans-serif-bold-oblique;
+//   }
+// }
+
+// @mixin pgs-shared-type-cat {
+//   @include serif;
+//   line-height: 1.6;
+//   @include media-breakpoint-down(sm) {
+//     @include font-size($pgs-font-subsize-1);
+//   }
+//   @include media-breakpoint-up(md) {
+//     @include font-size($pgs-font-subsize-2);
+//   }
+// }
+
+// SKIP LINKS
+
+#skip-links {
+  margin: 10px 0;
+  @include pgs-shared-type-canyon;
+}

@@ -1,0 +1,88 @@
+2026-07-07 21:41:21 [-][1][0fb2e2dc0e3d6b6193c268ae22b7dfb6][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Template not found: search in /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/controllers/TemplatesController.php:94
+Stack trace:
+#0 [internal function]: craft\controllers\TemplatesController->actionRender('search', Array)
+#1 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#3 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Module.php(552): yii\base\Controller->runAction('render', Array)
+#4 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Application.php(295): yii\base\Module->runAction('templates/rende...', Array)
+#5 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/web/Application.php(103): craft\web\Application->runAction('templates/rende...', Array)
+#6 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/craftcms/cms/src/web/Application.php(280): yii\web\Application->handleRequest(Object(craft\web\Request))
+#7 /Users/mk/Herd/Client-blmhe-2/public_html/vendor/yiisoft/yii2/base/Application.php(384): craft\web\Application->handleRequest(Object(craft\web\Request))
+#8 /Users/mk/Herd/Client-blmhe-2/public_html/public/index.php(24): yii\base\Application->run()
+#9 /Applications/Herd.app/Contents/Resources/valet/server.php(167): require('/Users/mk/Herd/...')
+#10 {main}
+2026-07-07 21:41:20 [-][1][0fb2e2dc0e3d6b6193c268ae22b7dfb6][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '16c113eb6e6af3d2cdfcca1ab194a283_identity' => '29a01080686ef3f75129b2965f7ca1e3ca86fe56b9b762e8471430485e532598a:2:{i:0;s:41:\"16c113eb6e6af3d2cdfcca1ab194a283_identity\";i:1;s:159:\"[1,\"[\\\"L76o7OJbUaSuPb770V5DyX744cWJFw7IyWN-hmIhmodLp_q1-mo0CizYnEf4AMPCYxNronycN5QbMpYSF_dvsJlCyNd8sWBhgLH4\\\",null,\\\"b153b6591950ef35fa583837fe2188f6\\\"]\",3600]\";}'
+    '16c113eb6e6af3d2cdfcca1ab194a283_username' => '6bc49022524af76925c16f77a581b6afb366b48e917037a60473cbee74b5ea37a:2:{i:0;s:41:\"16c113eb6e6af3d2cdfcca1ab194a283_username\";i:1;s:3:\"blm\";}'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'CraftSessionId' => '0fb2e2dc0e3d6b6193c268ae22b7dfb6'
+]
+
+$_SESSION = [
+    '000b7a9ca66b3f8f030de060e4fd5784__flash' => []
+    '16c113eb6e6af3d2cdfcca1ab194a283__token' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '16c113eb6e6af3d2cdfcca1ab194a283__id' => 1
+    '__authKey' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '16c113eb6e6af3d2cdfcca1ab194a283__expire' => 1783478481
+    '__duration' => 3600
+]
+
+$_SERVER = [
+    'USER' => 'mk'
+    'HOME' => '/Users/mk'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '16c113eb6e6af3d2cdfcca1ab194a283_identity=29a01080686ef3f75129b2965f7ca1e3ca86fe56b9b762e8471430485e532598a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%2216c113eb6e6af3d2cdfcca1ab194a283_identity%22%3Bi%3A1%3Bs%3A159%3A%22%5B1%2C%22%5B%5C%22L76o7OJbUaSuPb770V5DyX744cWJFw7IyWN-hmIhmodLp_q1-mo0CizYnEf4AMPCYxNronycN5QbMpYSF_dvsJlCyNd8sWBhgLH4%5C%22%2Cnull%2C%5C%22b153b6591950ef35fa583837fe2188f6%5C%22%5D%22%2C3600%5D%22%3B%7D; 16c113eb6e6af3d2cdfcca1ab194a283_username=6bc49022524af76925c16f77a581b6afb366b48e917037a60473cbee74b5ea37a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%2216c113eb6e6af3d2cdfcca1ab194a283_username%22%3Bi%3A1%3Bs%3A3%3A%22blm%22%3B%7D; CRAFT_CSRF_TOKEN=82380e518d03562c66f81f022e73260c268ec2affce565c063e1dfa49e5e1ec5a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22aVLAp4BQeMqZAdssyK3rh7oJJOuQlJ_WwhEiAA5y%7Cceed69265c7cbbf77ec60cebdfa6b5ce77e2671302204ff94e2cac0a7de8e949aVLAp4BQeMqZAdssyK3rh7oJJOuQlJ_WwhEiAA5y%7C1%22%3B%7D; CraftSessionId=0fb2e2dc0e3d6b6193c268ae22b7dfb6'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_PRIORITY' => 'u=0, i'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5.2 Safari/605.1.15'
+    'HTTP_HOST' => 'blmhe.test'
+    'PATH_INFO' => ''
+    'HERD_HOME' => '/Users/mk/Library/Application Support/Herd'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'blmhe.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '53862'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.25.4'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Users/mk/Herd/Client-blmhe-2/public_html/public'
+    'DOCUMENT_URI' => '/Applications/Herd.app/Contents/Resources/valet/server.php'
+    'REQUEST_URI' => '/search'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/Users/mk/Herd/Client-blmhe-2/public_html/public/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/search'
+    'REQUEST_TIME_FLOAT' => 1783474880.9417
+    'REQUEST_TIME' => 1783474880
+    'argv' => []
+    'argc' => 0
+    'HERD_SITE_PATH' => '/Users/mk/Herd/Client-blmhe-2/public_html/public'
+    'ENVIRONMENT' => 'production'
+    'APP_ID' => 'CraftCMS--40fadfbd-5acb-4346-8cc6-f36bc6a8bc5e'
+    'SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'DB_DRIVER' => 'mysql'
+    'DB_SERVER' => '127.0.0.1'
+    'DB_PORT' => ''
+    'DB_DATABASE' => 'client-blmhe-org'
+    'DB_USER' => 'root'
+    'DB_PASSWORD' => ''
+    'DB_SCHEMA' => 'public'
+    'DB_TABLE_PREFIX' => ''
+    'SYSTEM_NAME' => 'Black Lives Matter in Higher Education'
+    'PRIMARY_SITE_URL' => 'http://blmhe.org'
+]

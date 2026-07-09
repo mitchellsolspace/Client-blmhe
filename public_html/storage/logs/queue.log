@@ -1,0 +1,6 @@
+2026-07-07 20:02:34 [-][1][-][info][craft\queue\QueueLogBehavior::beforeExec]  [1] Updating search indexes (attempt: 1) - Started
+2026-07-07 20:02:34 [-][1][-][info][craft\queue\QueueLogBehavior::afterExec]  [1] Updating search indexes (attempt: 1) - Done (time: 0.010s)
+2026-07-07 20:24:03 [-][1][-][info][craft\queue\QueueLogBehavior::beforeExec]  [2] Pushing announcement to control panel users (attempt: 1, pid: 60218) - Started
+2026-07-07 20:24:03 [-][1][-][info][craft\queue\QueueLogBehavior::afterExec]  [2] Pushing announcement to control panel users (attempt: 1, pid: 60218) - Done (time: 0.005s)
+2026-07-07 20:24:03 [-][1][-][info][craft\queue\QueueLogBehavior::beforeExec]  [3] Pushing announcement to control panel users (attempt: 1, pid: 60218) - Started
+2026-07-07 20:24:03 [-][1][-][info][craft\queue\QueueLogBehavior::afterExec]  [3] Pushing announcement to control panel users (attempt: 1, pid: 60218) - Done (time: 0.001s)

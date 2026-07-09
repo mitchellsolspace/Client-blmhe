@@ -1,0 +1,16 @@
+.aldrich-button {
+  @include serif;
+  padding-top: .75em;
+  padding-bottom: .75em;
+  @include media-breakpoint-down(sm) {
+    @include font-size($pgs-font-subsize-1);
+  }
+  @include media-breakpoint-up(md) {
+    @include font-size($pgs-font-subsize-2);
+  }
+  &.btn-primary {
+    color: $white !important;
+    text-decoration: none;
+  }
+  // padding-top: 0.6rem;
+}

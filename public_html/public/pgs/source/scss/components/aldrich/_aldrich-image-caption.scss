@@ -1,0 +1,19 @@
+@mixin caption {
+  @include serif;
+  @include font-size($pgs-font-subsize-2);
+  color: theme-color("medium-gray");
+  a {
+    color: theme-color("medium-gray");
+  }
+}
+
+.image-caption {
+  text-align: left;
+  padding: 5px 0 5px 0;
+  line-height: 1 !important;
+  background: theme-color("off-white");
+  p {
+    @include caption;
+    line-height: 1.4;
+  }
+}

@@ -1,0 +1,14 @@
+enableVersioning: true
+handle: interview
+name: Interview
+propagationMethod: all
+siteSettings:
+  54cfc1fa-f6ef-4e85-b5d2-333a954f035c:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 393fc514-b1e2-4131-849e-bd33c24d10e5
+type: structure

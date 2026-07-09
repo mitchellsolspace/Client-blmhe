@@ -1,0 +1,32 @@
+{% extends "_layout" %}
+
+{% block head %}
+  {{ parent() }}
+{% endblock %}
+
+{% block nav %}
+  {{ parent() }}
+{% endblock %}
+
+{% block main %}
+
+  {% include "_partials/_main-nav-header" %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 longform text-center">
+        <h2 class="longform__feature">Sorry, we can't find that page.</h2>
+        <p>See our <a href="/exhibitions">exhibitions</a>, <a href="/events">events</a>, and <a href="/visit">visit us</a></p>
+        <div class="vspace-xs-5"></div>
+      </div>
+    </div>
+  </div>
+
+  {% include "_partials/_hr-before-footer" %}
+  <div class="vspace-xs-5"></div>
+  
+{% endblock main %}
+
+{% block footer %}
+  
+{% endblock %}

@@ -1,0 +1,83 @@
+{# For lazy loading images everywhere else I'm using Lazy Sizes tuned to srcset #}
+{# This is the "Modern Transparent srcset Pattern" advocated by Lazy Sizes: https://github.com/aFarkas/lazysizes #}
+
+{% macro lazyImage(lazyImageClass, lazyImageImgLowQuality, lazyImageFallbackImg, lazyImageImages, lazyImageAltText, lazyImageShowLowQualityImageWhileLoading, lazyImageShowAutoSize, lazyImageWrap, height, width) %}
+  <img
+    {% if lazyImageShowAutoSize %}
+    data-sizes="auto"
+    {% endif %}
+    data-src="{{lazyImageFallbackImg}}" {# Normal fallback image #}
+    {% if lazyImageShowLowQualityImageWhileLoading %}
+      srcset="{{lazyImageImgLowQuality.img}} {{lazyImageImgLowQuality.width}}w" {# Low quality pre-load image #}
+    {% else %}
+      srcset="/pgs/img/optimized/transparent-pixel.gif"
+    {% endif %}
+  	{# First data-srcset should match src per pattern recommendation #}
+  	data-srcset="{% for image in lazyImageImages %}{{image.img}} {{image.width}}w{% if loop.last != true %},{% endif %}{% endfor %}"
+    class="lazyload blur-up {{lazyImageClass}}"
+    alt="{{lazyImageAltText}}"
+    title="{{lazyImageAltText}}"
+    {% if lazyImageWrap %}
+      style="shape-outside:url('{% for image in lazyImageImages %}{% if loop.first %}{{image.img}}{% endif %}{% endfor %}')"
+    {% endif %}
+    height="{{height}}"
+    width="{{width}}">
+    <noscript>
+      <img src="{{lazyImageFallbackImg}}" alt="{{lazyImageAltText}}">
+    </noscript>
+{% endmacro %}
+
+{# Picture tag for art-directed images #}
+{# Height and width intentionally omitted becasue it's a picture tag so we can't know what the aspect ratio is since there can be multiple images. #}
+{% macro lazyPicture(classes, fallbackImg, images, alt) %}
+  <picture class="{{classes}}">
+    
+    {% for source in images %}
+    <source
+      media="(min-width: {{source.minWidth}}px)"
+      data-srcset="{% for image in source.images %}{{image.img}} {{image.width}}w{% if loop.last != true %},{% endif %}{% endfor %}"
+    >
+    {% endfor %}
+    {# Preloading a transparent square because I can't know the right size or image to load in in advance since this will be art directed at different breakpoints and could change in dimension or depiction. I can't think of a better solution#}
+    <img
+      src="/pgs/build/img/icons/transparent.gif"
+      class="lazyload blur-up"
+      alt="{{alt}}"
+      {# I  have to apply data-sizes="auto" here for it to apply sizes to the <source> elements above. An unfortunate side effect is that it applied an attribute of "sizes" to this <img> tag which won't validate. But so it goes. It's not an important validation error. #}
+      data-sizes="auto">
+  </picture>
+  <noscript>
+    <img src="{{fallbackImg}}" alt="{{alt}}">
+  </noscript>
+{% endmacro %}
+
+{% macro exhibitionEyebrow(entry) %}
+  {{entry.startDate | date('F j, Y') ~ " to " ~ entry.endDate | date('F j, Y')}}{% if entry.locations %} | {{entry.locations}}{% endif %}
+{% endmacro %}
+
+{% macro eventEyebrow(entry, level) %}
+  {# If I change this - be sure to change everywhere! As of 2019/12 I couldn't use a macro or include to share this.
+  Setting correct formatting for different date arrangements #}
+  {% set startYear = entry.startDateAndTime|date('Y') %}
+  {% set endYear = entry.endDateAndTime|date('Y') %}
+
+  {# Proper way to format datetime in <time datetime="XXX">
+  Date alone: {{entry.startDateAndTime|date('Y-m-d')}}
+  Time alone: {{entry.startDateAndTime|date('Y-m-d\\TH:i\\Z', "UTC" )}} 
+  #}
+  
+  {% if endYear == null or entry.hideEndDateAndTime or entry.startDateAndTime|date('F j, Y') == entry.endDateAndTime|date('F j, Y') %}
+    {{ entry.startDateAndTime|date('F j, Y') }} {% if not entry.hideTime %}at {{entry.startDateAndTime|date('g:i a')}}{% endif %}
+  {% else %}
+    {% if endYear == startYear %}
+      {{entry.startDateAndTime|date('F j')}} {% if not entry.hideTime %}at {{entry.startDateAndTime|date('g:i a')}}{% endif %} to {{entry.endDateAndTime|date('F j, Y')}} {% if not entry.hideTime %}at {{entry.endDateAndTime|date('g:i a')}}{% endif %}
+    {% else %}
+      {{entry.startDateAndTime|date('F j, Y')}} {% if not entry.hideTime %}at {{entry.startDateAndTime|date('g:i a')}}{% endif %} to {{entry.endDateAndTime|date('F j, Y')}} {% if not entry.hideTime %}at {{entry.endDateAndTime|date('g:i a')}}{% endif %}
+    {% endif %}
+  {% endif %}
+  {% if entry.eventCategories|length > 0 %}
+    {% if entry.eventCategories.level(level)|length %} | {% for category in entry.eventCategories.level(level).all() %}<a href="{{category.url}}">{{category.title}}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}
+  {% endif %}
+  {# {% if entry.locations %} | {{entry.locations}}{% endif %} #}
+
+{% endmacro %}

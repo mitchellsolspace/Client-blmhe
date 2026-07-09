@@ -1,0 +1,26 @@
+// Helpful for preventing flash of unwanted transitions on breakpoint change
+.pgs {
+  &-no-transition {
+    transition: none !important;
+  }
+}
+
+html.pgs-noscroll,
+html.pgs-noscroll body {
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overscroll-behavior: none;
+  overflow: hidden !important;
+  height: 100% !important;
+}
+
+// To make Bootstrap ScrollSpy work
+body {
+  position: relative;
+}
+
+html {
+  // I'm disabling scroll-behavior because my auto scroll-to-center in jumpBarScroll.js won't work 
+  // scroll-behavior: smooth;
+  background: theme-color("off-white");
+}

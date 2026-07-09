@@ -1,0 +1,26 @@
+dateModified: 1783470232
+email:
+  fromEmail: perry@perrygarvinstudio.com
+  fromName: 'Black Lives Matter in Higher Education'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    7afbbfc1-ad51-49ae-aa35-8833b06027e0: Assets # Assets
+    7b370c96-0fd0-4ffd-be32-b1466c1853be: General # General
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: $SYSTEM_NAME
+  schemaVersion: 3.8.0.1
+  timeZone: America/New_York
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: /user-photos
+  photoVolumeUid: 7afbbfc1-ad51-49ae-aa35-8833b06027e0 # Assets
+  requireEmailVerification: true

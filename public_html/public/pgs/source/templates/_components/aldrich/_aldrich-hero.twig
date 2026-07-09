@@ -1,0 +1,33 @@
+<div class="aldrich-hero">
+
+	{% include "_components/base-image-container" with {
+    imageContainerClasses: imageContainerClasses ~ " aldrich-hero__image-container",
+
+    lazyImageClass: null,
+    lazyImageImgLowQuality: lazyImageImgLowQuality,
+    lazyImageFallbackImg: lazyImageFallbackImg,
+    lazyImageImages: lazyImageImages,
+    lazyImageAltText: lazyImageAltText,
+    lazyImageShowLowQualityImageWhileLoading: lazyImageShowLowQualityImageWhileLoading,
+    lazyImageShowAutoSize: lazyImageShowAutoSize,
+    
+    imageCaptionTag : imageCaptionTag,
+    imageCaptionCaption : imageCaptionCaption,
+    imageCaptionClasses : null,
+    lazyImageWrap: false,
+
+    height: imageHeight,
+    width: imageWidth
+
+  } %}
+
+  {# Disabled but kept here just in case #}
+  {# <div class="aldrich-hero__caption">
+    {% include "_components/base-header" with {
+      headerClasses : headerClasses ~ " aldrich-hero__caption-header",
+      headerTag : headerTag,
+      headerTitle : headerTitle,
+      headerAttribute: headerAttributes
+    } %}
+  </div> #}
+</div>

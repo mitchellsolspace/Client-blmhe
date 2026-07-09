@@ -1,0 +1,31 @@
+contentColumnType: string
+fieldGroup: f33009e6-e6ee-48c3-9dc3-861195670ed1
+handle: transcript
+instructions: ''
+name: Transcript
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:7afbbfc1-ad51-49ae-aa35-8833b06027e0' # Assets
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:7afbbfc1-ad51-49ae-aa35-8833b06027e0' # Assets
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

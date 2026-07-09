@@ -1,0 +1,197 @@
+{# CRAFT HELPERS #}
+{% set segment1 = craft.app.request.getSegment(1) %}
+{% set segment2 = craft.app.request.getSegment(2) %}
+{% set segment3 = craft.app.request.getSegment(3) %}
+{% set segment4 = craft.app.request.getSegment(4) %}
+{% set segment4 = craft.app.request.getSegment(5) %}
+{% set segment4 = craft.app.request.getSegment(6) %}
+
+{% set env = getenv('ENVIRONMENT') %}
+
+{# CHANGE FOR BLM #}
+{% set page = "" %}
+{% if segment1 is null %}
+  {% set page = "home" %}
+{% else %}
+	{% set page = "404" %}
+{% endif %}
+
+{# WORDSMITH CONSTANTS #}
+{# {% set titleCharacters = 40 %} #}
+
+{# TEXT CONSTANTS #}
+{# {% set textConstant = "XXX" %} #}
+
+{# IMAGE EAGER TRANSFORMS (these should match all transforms in use in Control Panel) #}
+{% set pgsEagerTransforms = {
+	withTransforms: [
+		'aldrich_image_1x1_2000px',
+		'aldrich_image_1_6x1_2000px',
+		'aldrich_image_2000px_w',
+		'aldrich_image_6x4_5_2000px',
+		'image_openGraph' 
+	]
+} %}
+
+{# SEO #}
+
+	{% if page == "home" %}
+		{% set pageTitle = "Home" %}
+		{% set pageImage = "/pgs/build/img/icons/icon-open-graph.png" %}
+		{% set pageDescription = "Black Lives Matter in Higher Education" %}
+		{% set canonicalUrl = craft.app.request.absoluteUrl %}
+	{% else %}
+		{% set pageTitle = "Page Not Found" %}
+		{% set pageImage = "/pgs/build/img/icons/icon-open-graph.png" %}
+		{% set pageDescription = "Page Not Found" %}
+		{% set canonicalUrl = craft.app.request.absoluteUrl %}
+	{% endif %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com"> 
+		<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+
+		{% if env != 'production' or page == "searchResults" %}
+			<meta name="robots" content="noindex,nofollow">
+			<meta name="googlebot" content="noindex,nofollow">
+		{% endif %}
+		
+		<title>{{ pageTitle }} | {{siteName}}</title>
+		<meta name="description" content="{{pageDescription}}">
+		
+		{# Disable tap highlight on IE #}
+		<meta name="msapplication-tap-highlight" content="no">
+
+		{# START Icons #}
+		<meta name="apple-mobile-web-app-title" content="{{ siteName }}">
+		<meta name="application-name" content="{{ siteName }}">
+		<meta name="msapplication-config" content="/pgs/img/icons/browserconfig.xml">
+		<meta name="theme-color" content="#000000">
+		<link rel="apple-touch-icon" href="/pgs/build/img/icons/icon-192.png">
+		<link rel="icon" type="image/png" href="/pgs/build/img/icons/icon-192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/pgs/build/img/icons/icon-32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/pgs/build/img/icons/icon-16.png" sizes="16x16">
+		
+		{# The SVG file must be a single layer and the viewBox attribute must be set to "0 0 16 16". https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html #}
+		<link rel="mask-icon" href="/pgs/build/img/svg/logo-mark.svg" color="black">
+		
+		{# Be sure to update title in this JSON file #}
+		<link rel="manifest" href="/pgs/build/img/icons/manifest.json">
+		{# END Icons #}
+
+		{# 1200px x 630px min. 1.9:1 aspect ratio, 8MB max size - use OpenGraph Debugger to validate #}
+		<meta property="og:locale" content="en_US">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="{{ siteName }}">
+		<meta property="og:title" content="{{ pageTitle }} | {{ siteName }}">
+		<meta property="og:description" content="{{pageDescription}}">
+		<meta property="og:url" content="{{ canonicalUrl }}">
+		<meta property="og:image" content="{{pageImage}}">
+		<meta property="og:image:alt" content="{{pageDescription}}">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		{# <meta property="fb:app_id" content="XXX"> #}
+
+		{# <meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@newarkrhythms">
+		<meta name="twitter:creator" content="@newarkrhythms"> #}
+		
+		<link rel="canonical" href="{{ canonicalUrl }}">
+		
+		<link rel="stylesheet" type="text/css" href="/pgs/build/css/app.css?{% include "_partials/_cachebust" %}">
+		
+		{# Insert Polyfill.io if necessary #}
+
+		{# Update Modernizr with the detects I need by going to /pgs/source/js/libraries/modernizr in Terminal, adjusting "modernizr-config.json" then running "npx modernizr -c modernizr-config.json" which will output a file called "modernizr.js" in that same directory. It's been wired up in top.js #}
+		{# This is using a hook in Codekit to output the date Codekit processes the file to the _cachebust partial #}
+		<script src="/pgs/build/js/top.js?{% include "_partials/_cachebust" %}"></script>
+		{% block head %}
+		{% if env == 'staging' %}
+
+			{# START Google Tag Manager (same as below, but available to enable for previewing) #}
+			{# XXX #}
+			{# END Google Tag Manager #}		
+
+		{% elseif env == "production" %}
+
+			{# START HEAD Aldrich Google Tag Manager taken from their old site #}
+			{# I have disabled Tag Manager because they aren't using it ... yet #}
+			{# <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-N8BFMN2');</script> #}
+			{# END Google Tag Manager $}
+
+			{# START Facebook analytics #}
+			{# XXX #}
+			{# END Facebook analytics #}
+
+		{% endif %}
+	{% endblock head %}
+	</head>
+
+	{# Eliminate these when done integrating CMS #}
+	{% set placeholderImageLow = "/pgs/build/img/test-golden-black.jpg" %}
+	{% set placeholderImage = "/pgs/build/img/test-golden-black.jpg" %}
+
+	{# data-spy should only apply where necessary #}
+	<body data-spy="scroll" data-target="#jump-bar">
+	
+		{% switch env %}
+			{% case "staging" %}
+				{# START Google Tag Manager (same as below, but available to enable for previewing) #}
+				{# XXX #}
+				{# END Google Tag Manager #}
+			{% case "production" %}
+				{# START BLM Google Tag Manager (noscript) #}
+				{# I have disabled Tag Manager because they aren't using it ... yet #}
+				{# <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8BFMN2"
+				height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> #}
+				{# END BLM Google Tag Manager (noscript) #}
+		{% endswitch %}
+		
+		<!--[if lte IE 9]>
+		<p style="background-color: #fee612;padding: 1rem; text-align: center; margin-bottom: 0 !important;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" style="color: #f00; font-weight: bold;">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<h1 class="sr-only">{{siteName}}</h1>
+
+		{# Use with skipLink.js that I wrote #}
+		<a id="skip-links" class="sr-only sr-only-focusable d-block text-center" href="#main">Skip to main content</a>
+
+		<div class="main-nav-container">
+			{# {% include "_partials/_main-nav" %} #}
+		</div>
+		
+		<main id="main">	
+			{% block main %}{% endblock %}
+		</main>
+
+		<footer>
+			{# {% include "_partials/_footer" %} #}
+		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+		{# <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> #}
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		{# This is using a hook in Codekit to output the date Codekit processes the file to the _cachebust partial #}
+		<script src="/pgs/build/js/app.js?{% include "_partials/_cachebust" %}"></script>
+		<script src="/pgs/build/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+		
+		{% if env == 'production' %}
+			
+			{# START BLM Google Analytics #}
+				{# TK #}
+			{# END Google Analytics #}
+
+		{% endif %}
+	</body>
+
+</html>

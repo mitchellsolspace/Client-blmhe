@@ -1,0 +1,30 @@
+{% import "_macros" as macro %}
+<div class="aldrich-link__link {{classes}}">
+  {% if images %}
+  {% if link %}<a class="aldrich-link__link-image-link" href="{{link}}">{% else %}<div class="aldrich-link__link-image-link">{% endif %}
+    {{ macro.lazyImage (
+      "aldrich-link__link-image",
+      {
+        img : imagePlaceholder,
+        width : '50'
+      },
+      imageFallback,
+      images,
+      altText,
+      true,
+      true,
+      false,
+      imageHeight,
+      imageWidth
+    )}}
+  {% if link %}</a>{% else %}</div>{% endif %}
+  {% endif %}
+  <div class="aldrich-link__link-text">
+    {% if link %}<a href="{{link}}">{% endif %}<{{titleTag}}>{{text}}</{{titleTag}}>{% if link %}</a>{% endif %}
+  </div>
+  {% if showHr %}
+    {% include "_components/base-hr" with {
+      hrClasses : "hr--thin d-md-none"
+    } %}
+  {% endif %}
+</div>

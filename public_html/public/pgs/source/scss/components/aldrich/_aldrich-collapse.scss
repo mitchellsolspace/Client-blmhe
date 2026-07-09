@@ -1,0 +1,24 @@
+.aldrich-collapse {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  // font-size: 30px;
+  line-height: 1.2 !important;
+  &::after {
+    content: " ";
+    display: inline-block;
+    width: 0.7em;
+    height: 0.7em;
+    background-image: url("../img/svg/chevron-down.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-left: 5px;
+    margin-bottom: 2px;
+  }
+  &.collapsed {
+    &::after {
+      background-image: url("../img/svg/chevron-right.svg");
+    }
+  }
+}

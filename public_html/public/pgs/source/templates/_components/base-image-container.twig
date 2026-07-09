@@ -1,0 +1,24 @@
+{% import "_macros" as macro %}
+<figure class="image-container {{imageContainerClasses}}">
+	{{ macro.lazyImage (
+  	lazyImageClass,
+  	lazyImageImgLowQuality,
+  	lazyImageFallbackImg,
+  	lazyImageImages,
+  	lazyImageAltText,
+  	lazyImageShowLowQualityImageWhileLoading,
+  	lazyImageShowAutoSize,
+		lazyImageWrap,
+		height,
+		width
+  )}}
+	{% if imageCaptionCaption %}
+		{% set imageCaptionVars = {
+			imageCaptionTag : imageCaptionTag,
+			imageCaptionCaption : imageCaptionCaption,
+			imageCaptionClasses : imageCaptionClasses
+			}
+	  %}
+		{% include "_components/base-image-caption" with imageCaptionVars %}
+	{% endif %}
+</figure>

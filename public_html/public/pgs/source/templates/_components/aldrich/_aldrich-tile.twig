@@ -1,0 +1,82 @@
+{% import "_macros" as macro %}
+<div class="tile {{classes}}">
+  {% if images %}
+  <div class="tile__image-container {% if showFloatImage %}d-none d-md-block{% endif %}">
+    {% if hero %}
+      {% if link %}<a href="{{link}}">{% endif %}
+        {% include "_components/aldrich/_aldrich-hero" with {
+          imageContainerClasses: null,
+
+          lazyImageImgLowQuality: {
+            img : imagePlaceholder,
+            width : '50'
+          },
+          lazyImageFallbackImg: imageFallback,
+          lazyImageImages: images,
+          lazyImageAltText: altText,
+          lazyImageShowLowQualityImageWhileLoading: true,
+          lazyImageShowAutoSize: true,
+          
+          imageCaptionTag : "figcaption",
+          imageCaptionCaption : null,
+
+          imageWidth: imageHeight,
+          imageHeight: imageWidth,
+
+          headerClasses :  null,
+          headerTag : null,
+          headerTitle : null,
+          headerAttributes: null
+
+        } %}
+      {% if link %}</a>{% endif %}
+    {% elseif images %}
+      {% if link %}<a href="{{link}}">{% endif %}
+        {{ macro.lazyImage (
+          "tile__image",
+          {
+            img : imagePlaceholder,
+            width : '50'
+          },
+          imageFallback,
+          images,
+          altText,
+          true,
+          true,
+          false,
+          imageHeight,
+          imageWidth
+        )}}
+      {% if link %}</a>{% endif %}
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <div class="tile__caption">
+    {% if eyebrow %}<{{eyebrowTag}} class="tile__eyebrow pgs-global-spacer-eyebrow">{{eyebrow}}</{{eyebrowTag}}>{% endif %}
+      {% if showFloatImage %}<div class="tile__image-container {% if showFloatImage == false %}d-none {% endif %} d-md-none" aria-hidden="true">
+      {% if link %}<a href="{{link}}">{% endif %}
+        {{ macro.lazyImage (
+          "tile__image",
+          {
+            img : imagePlaceholder,
+            width : '50'
+          },
+          imageFallback,
+          images,
+          altText,
+          true,
+          true,
+          false,
+          imageHeight,
+          imageWidth
+        )}}
+      {% if link %}</a>{% endif %}
+    </div>{% endif %}
+    {% if title %}{% if link %}<a href="{{link}}" class="tile__link">{% endif %}<{{titleTag}} class="tile__title">{{title}}</{{titleTag}}>{% if link %}</a>{% endif %}{% endif %}
+    <div class="tile__description">
+      {{description | raw}}
+    </div>
+    {% if buttonLink and buttonText %}<a class="btn btn-primary aldrich-button tile__button" href="{{buttonLink}}">{{buttonText}}</a>{% endif %}
+  </div>
+</div>

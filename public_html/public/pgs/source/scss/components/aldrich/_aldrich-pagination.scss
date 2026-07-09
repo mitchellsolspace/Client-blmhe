@@ -1,0 +1,23 @@
+.aldrich-pagination {
+  @include pgs-shared-type-fence;
+  display: block;
+  text-align: center;
+  .page-item {
+    display: inline-block;
+  }
+  .page-link {
+    border: none;
+    background: none;
+    padding: 0;
+    color: theme-color("medium-gray");
+    transition: color 0.25s;
+    padding: 0 10px;
+    &--active, &:hover {
+      color: theme-color("primary");
+      transition: color 0.25s;
+    }
+    &:hover {
+      background: none;
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{% extends "_layout" %}
+
+{% block head %}
+	{{ parent() }}
+{% endblock %}
+
+{% block main %}
+
+	<nav class="nav">
+		<ul class="list-inline">
+			<li class="list-inline-item">
+				<a href="#interviews">Interviews</a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#timeline">Timeline</a>
+			</li>
+			<li class="list-inline-item">
+				<a href="#bibliography">Bibliography</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="hero"></div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 offset-md-2 longform">
+				{{ general.projectIntroduction }}
+			</div>
+		</div>
+    <div class="row">
+			<div class="col-sm-12">
+				{% include "_components/blm/_title" with {
+            tag: "h2",
+            id: "interviews",
+            classes: "blm-title__interviews",
+            text: "Interviews"
+          } %}
+			</div>
+		</div>
+    <div class="row">
+
+			<div class="col-md-10 longform">
+				{{ general.interviewsIntroduction }}
+			</div>
+		</div>
+
+    {# START INTERVIEWS #}
+    {% for interview in craft.entries.section("interview").all() %}
+    
+    {% set count = cycle(['odd', 'even'], loop.index0) %}
+    
+    <div class="row">
+			<div class="col-md-10 {% if count == 'odd' %}offset-md-2{% endif %} longform">
+				{% include "_components/blm/_video" with {
+            content: interview.videoEmbed
+          } %}
+        <h3>{{interview.title}}</h3>
+        <p style="margin-top:0" class="longform--gray">{{interview.description}}</p>
+        <p style="margin-top:0"><a href="{{interview.transcript.one.getUrl()}}">Download Transcript</a></p> 
+			</div>
+		</div>
+    {% endfor %}
+    {# END INTERVIEWS #}
+
+    <div class="row">
+			<div class="col-sm-12">
+				{% include "_components/blm/_title" with {
+            tag: "h2",
+            id: "timeline",
+            classes: "blm-title__timeline",
+            text: "Timeline"
+          } %}
+			</div>
+		</div>
+
+    {# START TIMELINE #}
+
+    {% set timelineEntries = craft.entries()
+    .section('timelineEntry').orderBy('postDate asc')
+    .all() %}
+
+    <div class="row timeline">
+      
+      {% for date, entries in timelineEntries|group("postDate|date('Y')") %}
+      <div class="col-sm-12" style="text-align: center">
+        <span class="timeline__year">{{ date }}</span>
+      </div>
+      
+      {% for entry in entries %} 
+      {% if entry.timelineType != 'local' %}
+        {% set longformClass = "longform--gray" %}
+      {% endif %}
+
+      <div class="col-sm-12">
+      <div class="row">
+      
+        {% set class = null %}
+        {% if entry.timelineType == "local" %}
+          {% set class = "timeline-entry__local" %}
+        {% endif %}
+        <div class="col-sm-8 col-md-5 {% if entry.timelineType != "local" %}offset-sm-4 offset-md-7{% endif %}">
+          {% include "_components/blm/_timeline-entry" with {
+            classes: class,
+            classesLongform: longformClass ?? null,
+            title: entry.title,
+            image: entry.image.one().getUrl() ?? null,
+            content: entry.timelineDescription
+          } %}
+        </div>
+        <div class="col-sm-4 col-md-7"></div>
+      </div>
+      </div>
+      {% endfor %}
+      
+      {% endfor %}
+      
+      {# <div class="col-sm-8 col-md-5">
+        <div class="vspace-xs-3"></div>
+        {% include "_components/blm/_timeline-entry" with {
+          classes: "timeline-entry__local",
+          classesLongform: null,
+          title: "1/2013 BLM NATIONALLY",
+          image: "http://placekitten.com/200/100",
+          content: "<p>Content</p><p>Content</p>"
+        } %}
+      </div>
+
+      <div class="col-sm-12" style="text-align: center">
+        <span class="timeline__year">2014</span>
+      </div>
+      #}
+
+    </div>
+    {# END TIMELINE #}
+
+    <div class="row">
+			<div class="col-sm-12">
+        {% include "_components/blm/_title" with {
+            tag: "h2",
+            id: "bibliography",
+            classes: "blm-title__bibliography",
+            text: "Biblio<span>graphy</span>"
+          } %}
+      </div>
+    </div>
+
+    <div class="row">
+			<div class="col-sm-12 longform">
+				{{ general.bibliography }}
+			</div>
+    </div>
+
+    <div class="row">
+			<div class="col-sm-12 longform">
+				
+        <div class="vspace-sm-3"></div>
+        {{ general.credits }}
+			</div>
+    </div>
+
+
+
+	</div>
+
+{% endblock %}

@@ -1,0 +1,206 @@
+{% if entry.longform|length %}
+
+<div class="row longform">
+
+  {% for longform in entry.longform.all() %}
+    {% switch longform.type %}
+      {% case "sectionHeader" %}
+        <div class="col-sm-12 col-lg-8 offset-lg-2">
+          <div class="vspace-xs-4"></div>
+          {# The following is a sample of how sections should be marked up #}
+          <h3 id="{{longform.text | replace({'0': "zero", '1': "one", '2': "two", '3': "three", '4': "four", '5': "five", '6': "six", '7': "seven", '8': "eight", '9': "nine" }) | slugify ~ "-" ~ loop.index0}}" class="jump-bar__scroll-margin longform__section">{{longform.text}}</h3> 
+        </div>
+      {% case "paragraphHeader" %}
+        <div class="col-sm-12 col-lg-8 offset-lg-2">
+          <h4 class="longform__bold">{{longform.text}}</h4>
+        </div>
+      {% case "paragraphText" %}
+          <div class="col-sm-12 col-lg-8 offset-lg-2 longform">
+            {{longform.text}}
+          </div>
+      {% case "imageWithCaption" %}
+
+        <div class="col-sm-12">
+          {% include "_components/base-image-container" with {
+            imageContainerClasses: "longform__image",
+
+            lazyImageClass: null,
+            lazyImageImgLowQuality: {
+              img : longform.image.one().getUrl('aldrich_image_2000px_w') ?? null,
+              width : '100'
+            },
+            lazyImageFallbackImg: longform.image.one().getUrl('aldrich_image_2000px_w') ?? null,
+            lazyImageImages: [
+              {
+                img : longform.image.one().getUrl('aldrich_image_2000px_w') ?? null,
+                width : '400'
+              },
+              {
+                img : longform.image.one().getUrl('aldrich_image_2000px_w') ?? null,
+                width : '900'
+              },
+              {
+                img : longform.image.one().getUrl('aldrich_image_2000px_w') ?? null,
+                width : '600'
+              },
+              {
+                img : longform.image.one().getUrl('aldrich_image_2000px_w') ?? null,
+                width : '800'
+              },
+              {
+                img : longform.image.one().getUrl('aldrich_image_2000px_w') ?? null,
+                width : '200'
+              }
+            ],
+            lazyImageAltText: longform.image.one().altText,
+            lazyImageShowLowQualityImageWhileLoading: true,
+            lazyImageShowAutoSize: true,
+
+            lazyImageWrap : false,
+            
+            imageCaptionTag : "figcaption",
+            imageCaptionCaption : longform.image.one().caption,
+            imageCaptionClasses : none,
+
+            height: 1000,
+            width: 2000
+
+          }%}
+        </div>
+      {% case "fancyboxImage" %}
+        <div class="col-sm-12">
+          <div class="row vspace-xs-shallow-3 vspace-offset-2-md vspace-offset-3-lg vspace-offset-3-xl">
+            {% set gallery = "gallery" ~ loop.index %}
+            {% for image in longform.image.all() %}
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              {% include "_components/aldrich/_aldrich-fancybox" with {
+                fancyboxFullsizeImage: image.getUrl('aldrich_image_2000px_w') ?? null,
+                fancyboxGalleryName : gallery,
+                fancyboxCaption : image.caption,
+                fancyboxClasses: null,
+
+                imageContainerClasses: "",
+
+                lazyImageAltText: image.altText,
+                lazyImageClass: null,
+                lazyImageImgLowQuality: {
+                  img : image.getUrl('aldrich_image_6x4_5_2000px') ?? null,
+                  width : '50'
+                },
+                lazyImageFallbackImg: image.getUrl('aldrich_image_6x4_5_2000px') ?? null,
+                lazyImageImages: [
+                  {
+                    img : image.getUrl('aldrich_image_6x4_5_2000px') ?? null,
+                    width : '400'
+                  },
+                  {
+                    img : image.getUrl('aldrich_image_6x4_5_2000px') ?? null,
+                    width : '900'
+                  },
+                  {
+                    img : image.getUrl('aldrich_image_6x4_5_2000px') ?? null,
+                    width : '600'
+                  },
+                  {
+                    img : image.getUrl('aldrich_image_6x4_5_2000px') ?? null,
+                    width : '800'
+                  },
+                  {
+                    img : image.getUrl('aldrich_image_6x4_5_2000px') ?? null,
+                    width : '200'
+                  }
+                ],
+                lazyImageShowLowQualityImageWhileLoading: true,
+                lazyImageShowAutoSize: true,
+                lazyImageWrap: false,
+
+                height: 2000,
+                width: 1000
+              } %}
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% case "video" %}
+        <div class="col-sm-12">
+          {% include "_components/base-responsive-embed" with {
+
+            pgsRespEmbedContainerClasses: "longform__responsive-embed",
+            pgsRespEmbedClasses: "embed-responsive-2by1",
+            pgsRespEmbedCode : longform.embedCode | raw,
+
+            imageCaptionTag : "div",
+            imageCaptionCaption : longform.caption,
+            imageCaptionClasses : null
+
+          } %}
+        </div>
+      {% case "audio" %}
+        <div class="col-sm-12">
+          {% include "_components/base-responsive-embed" with {
+
+            pgsRespEmbedContainerClasses: "longform__responsive-embed",
+            pgsRespEmbedClasses: "embed-responsive-7by1",
+            pgsRespEmbedCode : longform.embedCode | raw,
+
+            imageCaptionTag : "div",
+            imageCaptionCaption : longform.caption,
+            imageCaptionClasses : null
+
+          } %}
+        </div>
+      {% case "slideshow" %}
+        {% set slides = [] %}
+
+        {% for slide in longform.image.all() %}
+          {% set slides = slides|merge([
+            {
+              swiperImageLowQuality : slide.getUrl('aldrich_image_6x4_5_2000px') ?? null,
+              swiperImage1x : slide.getUrl('aldrich_image_6x4_5_2000px') ?? null,
+              swiperImages : [
+                {
+                  img : slide.getUrl('aldrich_image_6x4_5_2000px') ?? null,
+                  width : '200'
+                },
+                {
+                  img : slide.getUrl('aldrich_image_6x4_5_2000px') ?? null,
+                  width : '400'
+                },
+                {
+                  img : slide.getUrl('aldrich_image_6x4_5_2000px') ?? null,
+                  width : '600'
+                },
+                {
+                  img : slide.getUrl('aldrich_image_6x4_5_2000px') ?? null,
+                  width : '800'
+                },
+                {
+                  img : slide.getUrl('aldrich_image_6x4_5_2000px') ?? null,
+                  width : '1200'
+                }
+              ],
+              alt : slide.altText,
+              caption: {
+                tag: null,
+                caption: slide.caption
+              }
+            }
+          ]) %}
+        {% endfor %}
+
+        <div class="col-sm-12">
+          {% include "_components/aldrich/_aldrich-swiper-slideshow" with {
+            swiperClasses: "longform__slideshow",
+            images: slides
+          } %}
+        </div>
+      {% case "form" %}
+        <div class="col-sm-12 col-lg-8 offset-lg-2">
+          {% include "_partials/_freeform" with {
+            form : longform.form
+          }%}
+        </div>
+    {% endswitch %}
+  {% endfor %}
+</div>
+{% endif %}

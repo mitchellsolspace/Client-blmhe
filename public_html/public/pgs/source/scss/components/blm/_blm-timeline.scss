@@ -1,0 +1,12 @@
+.timeline {
+  background: url("../img/timeline-bar.gif") repeat-y;
+  background-position: center;
+  background-size: 7px;
+  &__year {
+    background: white;
+    padding: 10px 20px;
+    @include sans-serif;
+    text-transform: uppercase;
+    @include font-size($pgs-font-size-6);
+  }
+}

@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: f33009e6-e6ee-48c3-9dc3-861195670ed1
+handle: videoEmbed
+instructions: 'Copy and paste in embed code'
+name: 'Video Embed'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: '1'
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

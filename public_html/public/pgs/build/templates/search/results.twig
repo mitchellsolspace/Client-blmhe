@@ -1,0 +1,75 @@
+{% extends "_layout" %}
+
+{% block head %}
+	{{ parent() }}
+{% endblock %}
+
+{% block main %}
+
+{% set searchQuery = craft.app.request.getParam('q') %}
+{% set entries = craft.entries()
+  .search(searchQuery)
+  .orderBy('score')
+  .all() 
+%}
+
+{% include "_partials/_main-nav-header" %}
+
+<div class="container">
+{% if entries|length %}
+  <div class="row">
+    <div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h2 class="longform__feature">Search Results for “{{craft.app.request.getParam('q')}}”</h2>
+      <div class="vspace-xs-5"></div>
+    </div>
+  </div>
+  <div class="row vspace-xs-shallow-3">
+
+    {# START LOOP #}
+    {% for entry in entries %}
+    <div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      {% include "_components/aldrich/_aldrich-tile" with {
+        classes: "tile tile--a",
+        eyebrowTag: null,
+        eyebrow: null,
+        titleTag: "h3",
+        title: entry.title,
+        description: entry.description,
+        link: entry.url,
+        buttonLink: null,
+        buttonText: null,
+        hero: false,
+        showFloatImage: false,
+        images: null,
+        altText: null,
+        imageFallback: placeholderImage,
+        imagePlaceholder: placeholderImageLow,
+        
+        imageHeight: 1000,
+        imageWidth: 2000  
+      } %}
+      
+      {% if loop.last == false %}
+        <div class="vspace-xs-3"></div>
+        {% include "_components/base-hr" with {
+          hrClasses : "hr--thin"
+        } %} 
+      {% endif %}
+    </div>
+    
+    {% endfor %}
+    {# END LOOP #}
+  </div>
+  
+  {% else %}
+    <div class="col-sm-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <h2 class="longform__feature text-center">Sorry we can't find anything</h2>
+    </div>
+  {% endif %}
+</div>
+
+<div class="vspace-xs-5"></div>
+{% include "_partials/_hr-before-footer" %}
+<div class="vspace-xs-5"></div>
+
+{% endblock %}

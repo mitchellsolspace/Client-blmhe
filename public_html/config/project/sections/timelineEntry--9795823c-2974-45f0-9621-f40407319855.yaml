@@ -1,0 +1,11 @@
+enableVersioning: false
+handle: timelineEntry
+name: 'Timeline Entry'
+propagationMethod: all
+siteSettings:
+  54cfc1fa-f6ef-4e85-b5d2-333a954f035c:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

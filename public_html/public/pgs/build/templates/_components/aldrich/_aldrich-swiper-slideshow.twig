@@ -1,0 +1,44 @@
+{#
+	This is a basic, image-only Swiper. Anything that needs more functionality should have a new compnent with a name like: base-swiper-image-and-video
+
+  Requires:
+  - js/components/swiper.js
+  - scss/components/_swiper.scss
+	- Lazysizes.js for the auto sizes attribute. That's the only feature from LazySizes that I'm using; lazy loading comes from swiper.js but swiper.js doesn't do auto sizes attribute.
+#}
+
+{% macro spinner() %}
+	<div class="swiper-lazy-preloader">
+		<div class="spinner">
+			<div class="rect1"></div>
+			<div class="rect2"></div>
+			<div class="rect3"></div>
+			<div class="rect4"></div>
+			<div class="rect5"></div>
+		</div>
+	</div>
+{% endmacro %}
+
+<div class="swiper js-swiper-slideshow {{swiperClasses}}">
+
+	<div class="swiper-container js-swiper-container">
+		<div class="swiper-button-prev swiper-button-disabled">PREV</div>
+    <div class="swiper-wrapper">
+
+			{% for image in images %}
+				<figure class="swiper-slide embed-responsive embed-responsive-2by1">
+					<img src="{{image.swiperImageLowQuality}}" data-src="{{image.swiperImage1x}}" data-srcset="{% for im in image.swiperImages %}{{im.img}} {{im.width}}w{% if loop.last != true %},{% endif %}{% endfor %}" class="swiper-lazy lazyload" alt="{{image.alt}}" data-sizes="auto">
+					{# {{_self.spinner}} #}
+					{% include "_components/base-image-caption" with {
+						imageCaptionTag : image.caption.tag,
+						imageCaptionCaption : image.caption.caption,
+						imageCaptionClasses : "swiper-caption"
+					} %}
+				</figure>
+			{% endfor %}
+
+		</div>
+		<div class="swiper-button-next swiper-button-disabled">NEXT</div>
+	</div>
+
+</div>

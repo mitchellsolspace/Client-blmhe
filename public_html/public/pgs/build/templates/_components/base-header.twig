@@ -1,0 +1,1 @@
+{% if headerTitle %}<{{ headerTag ?? "div"}} {% if headerAttributes %}{% for attr in headerAttributes %}{{attr.name}}="{{attr.value}}"{% endfor %}{% endif %} class="header {{headerClasses}}">{{headerTitle|raw}}</{{ headerTag ?? "div"}}>{% endif %}
